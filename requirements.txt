@@ -1,0 +1,14 @@
+torch
+transformers
+pennylane
+matplotlib
+
+# UI dashboard
+streamlit
+pandas
+
+# Optional (for src/mcp_server/server.py)
+fastapi
+uvicorn
+pydantic
+

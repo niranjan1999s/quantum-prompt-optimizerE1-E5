@@ -1,0 +1,65 @@
+{
+  "config": {
+    "dataset_name": "glue",
+    "dataset_config": "sst2",
+    "model_name": "gpt2",
+    "epochs": 5,
+    "lr": 0.01,
+    "n_qubits": 8,
+    "n_layers": 30,
+    "embed_dim": 768,
+    "seed": 3,
+    "batch_size": 16,
+    "print_every": 1,
+    "checkpoint_every": 0,
+    "entanglement_mode": "no_entangle",
+    "plot": false
+  },
+  "quantum_loss_history": [
+    5.718728432288537,
+    1.0602894654640784,
+    0.7122022051077622,
+    0.703543823498946,
+    0.6572267779937158
+  ],
+  "david_loss_history": [
+    7.045229838444636,
+    5.6141330278836765,
+    3.251180126116826,
+    0.9597950486036447,
+    0.7164128697835482
+  ],
+  "classical_loss_history": [
+    4.437959588490999,
+    0.7524353174062876,
+    0.6887318652409774,
+    0.6734689611655015,
+    0.6342067397557772
+  ],
+  "quantum_acc_history": [
+    0.474,
+    0.52,
+    0.478,
+    0.614,
+    0.57
+  ],
+  "david_acc_history": [
+    0.69,
+    0.624,
+    0.55,
+    0.638,
+    0.602
+  ],
+  "classical_acc_history": [
+    0.566,
+    0.588,
+    0.654,
+    0.566,
+    0.708
+  ],
+  "q_quantum_only": 720,
+  "q_total_params": 7632,
+  "d_total_params": 7632,
+  "c_total_params": 527872,
+  "run_dir": "experiments\\gpt2\\sst2\\seed3_ep5_no_entangle"
+}

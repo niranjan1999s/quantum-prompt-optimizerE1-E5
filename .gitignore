@@ -1,0 +1,24 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+*.swp
+*.log
+.env
+dist/
+build/
+*.egg-info/
+.idea/
+.vscode/
+# Large experiment artifacts
+*.pdf
+*.docx
+!neurips_research_plan.docx
+!E3_E4_Comparison_Report.docx
+!E4_Experiment_Report.docx
+# Keep the report files, but maybe ignore temporary Word files
+~$*
+

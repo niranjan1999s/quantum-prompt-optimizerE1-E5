@@ -1,0 +1,13 @@
+{
+  "quantum_loss_history": [
+    5.30473518371582,
+    4.774954795837402
+  ],
+  "classical_loss_history": [
+    5.238336563110352,
+    4.566798686981201
+  ],
+  "q_quantum_only": 240,
+  "q_total_params": 4080,
+  "c_total_params": 107712
+}

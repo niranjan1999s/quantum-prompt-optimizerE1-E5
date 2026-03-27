@@ -1,0 +1,17 @@
+{
+  "hard_prompt_text": "The quantum key distribution protocol used is",
+  "target_word": " thermo-nuclear-astrophysics",
+  "model_name": "gpt2",
+  "epochs": 100,
+  "lr": 0.01,
+  "n_qubits": 8,
+  "n_layers": 40,
+  "embed_dim": 768,
+  "seed": 1,
+  "print_every": 1,
+  "checkpoint_every": 10,
+  "plot": false,
+  "attack_epsilon": 0.2,
+  "attack_steps": 2,
+  "adversarial_training": false
+}
