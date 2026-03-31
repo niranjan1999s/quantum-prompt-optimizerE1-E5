@@ -81,18 +81,30 @@ def train_classification(cfg: TrainConfig) -> dict[str, Any]:
     val_data = dataset["validation"].select(range(max(1, min(500, len(dataset["validation"])))))
     
     def collate_fn(batch):
-        texts = [f"Review: {item['sentence']}\nSentiment:" for item in batch]
+        if cfg.dataset_config == "sst2":
+            texts = [f"Review: {item['sentence']}\nSentiment:" for item in batch]
+        elif cfg.dataset_config == "rte":
+            texts = [f"Premise: {item['sentence1']}\nHypothesis: {item['sentence2']}\nEntailment:" for item in batch]
+        else:
+            raise ValueError(f"Unsupported dataset config: {cfg.dataset_config}")
         labels = torch.tensor([item['label'] for item in batch], dtype=torch.long)
         encodings = tokenizer(texts, padding=True, return_tensors="pt")
         return encodings.input_ids, encodings.attention_mask, labels
-        
     train_loader = DataLoader(train_data, batch_size=cfg.batch_size, shuffle=True, collate_fn=collate_fn)
     val_loader = DataLoader(val_data, batch_size=cfg.batch_size, shuffle=False, collate_fn=collate_fn)
 
-    # Verbalizer Map: SST-2 labels are 0: Negative, 1: Positive
-    token_neg = tokenizer.encode(" Negative")[0]
-    token_pos = tokenizer.encode(" Positive")[0]
-    verbalizer = torch.tensor([token_neg, token_pos]).to(device)
+    if cfg.dataset_config == "sst2":
+        # Verbalizer Map: SST-2 labels are 0: Negative, 1: Positive
+        token_neg = tokenizer.encode(" Negative")[0]
+        token_pos = tokenizer.encode(" Positive")[0]
+        verbalizer = torch.tensor([token_neg, token_pos]).to(device)
+    elif cfg.dataset_config == "rte":
+        # Verbalizer Map: RTE labels are 0: entailment (Yes), 1: not_entailment (No)
+        token_yes = tokenizer.encode(" Yes")[0]
+        token_no = tokenizer.encode(" No")[0]
+        verbalizer = torch.tensor([token_yes, token_no]).to(device)
+    else:
+        raise ValueError(f"Unsupported dataset config: {cfg.dataset_config}")
 
     dummy_input = torch.zeros(cfg.n_qubits).to(device)
 
@@ -200,10 +212,10 @@ def train_classification(cfg: TrainConfig) -> dict[str, Any]:
                 c_soft_prompt = c_prompt.unsqueeze(0).unsqueeze(0).expand(batch_sz, 1, -1)
                 c_logits = llm(inputs_embeds=torch.cat([c_soft_prompt, hard_embeddings], dim=1)).logits[:, -1, :]
                 
-                # Accuracy calculation by comparing the two verbalizer logits
-                q_preds = torch.argmax(q_logits[:, [token_neg, token_pos]], dim=-1)
-                d_preds = torch.argmax(d_logits[:, [token_neg, token_pos]], dim=-1)
-                c_preds = torch.argmax(c_logits[:, [token_neg, token_pos]], dim=-1)
+                # Accuracy calculation by comparing the verbalizer logits
+                q_preds = torch.argmax(q_logits[:, verbalizer], dim=-1)
+                d_preds = torch.argmax(d_logits[:, verbalizer], dim=-1)
+                c_preds = torch.argmax(c_logits[:, verbalizer], dim=-1)
                 
                 q_correct += (q_preds == labels).sum().item()
                 d_correct += (d_preds == labels).sum().item()
