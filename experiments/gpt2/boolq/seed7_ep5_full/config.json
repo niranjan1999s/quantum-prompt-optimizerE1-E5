@@ -1,0 +1,16 @@
+{
+  "dataset_name": "super_glue",
+  "dataset_config": "boolq",
+  "model_name": "gpt2",
+  "epochs": 5,
+  "lr": 0.01,
+  "n_qubits": 8,
+  "n_layers": 30,
+  "embed_dim": 768,
+  "seed": 7,
+  "batch_size": 2,
+  "print_every": 1,
+  "checkpoint_every": 0,
+  "entanglement_mode": "full",
+  "plot": false
+}

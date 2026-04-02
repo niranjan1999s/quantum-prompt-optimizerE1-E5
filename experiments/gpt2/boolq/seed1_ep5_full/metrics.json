@@ -1,0 +1,65 @@
+{
+  "config": {
+    "dataset_name": "super_glue",
+    "dataset_config": "boolq",
+    "model_name": "gpt2",
+    "epochs": 5,
+    "lr": 0.01,
+    "n_qubits": 8,
+    "n_layers": 30,
+    "embed_dim": 768,
+    "seed": 1,
+    "batch_size": 2,
+    "print_every": 1,
+    "checkpoint_every": 0,
+    "entanglement_mode": "full",
+    "plot": false
+  },
+  "quantum_loss_history": [
+    2.0064100486040117,
+    0.8727848502993584,
+    0.7369238072633744,
+    0.7051222574710846,
+    0.7135614992678165
+  ],
+  "david_loss_history": [
+    1.4176283040642739,
+    0.7728215985000133,
+    0.705397173911333,
+    0.6709229663014412,
+    0.714622644558549
+  ],
+  "classical_loss_history": [
+    1.1573906664550304,
+    0.7340317218005658,
+    0.7082971628010273,
+    0.655747667402029,
+    0.6904761901497841
+  ],
+  "quantum_acc_history": [
+    0.608,
+    0.552,
+    0.628,
+    0.626,
+    0.616
+  ],
+  "david_acc_history": [
+    0.624,
+    0.408,
+    0.582,
+    0.63,
+    0.624
+  ],
+  "classical_acc_history": [
+    0.582,
+    0.496,
+    0.572,
+    0.626,
+    0.586
+  ],
+  "q_quantum_only": 720,
+  "q_total_params": 7632,
+  "d_total_params": 7632,
+  "c_total_params": 527872,
+  "run_dir": "experiments\\gpt2\\boolq\\seed1_ep5_full"
+}

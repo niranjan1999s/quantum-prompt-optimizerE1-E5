@@ -78,13 +78,19 @@ def train_classification(cfg: TrainConfig) -> dict[str, Any]:
     # Dataset loading
     dataset = load_dataset(cfg.dataset_name, cfg.dataset_config)
     train_data = dataset["train"].select(range(200))   # Sliced for E4 speed (GTX 1650)
-    val_data = dataset["validation"].select(range(max(1, min(500, len(dataset["validation"])))))
+    
+    val_split_name = "validation" if "validation" in dataset else "test"
+    val_data = dataset[val_split_name].select(range(max(1, min(500, len(dataset[val_split_name])))))
     
     def collate_fn(batch):
         if cfg.dataset_config == "sst2":
             texts = [f"Review: {item['sentence']}\nSentiment:" for item in batch]
         elif cfg.dataset_config == "rte":
             texts = [f"Premise: {item['sentence1']}\nHypothesis: {item['sentence2']}\nEntailment:" for item in batch]
+        elif cfg.dataset_config == "boolq":
+            texts = [f"Passage: {item['passage']}\nQuestion: {item['question']}\nAnswer:" for item in batch]
+        elif cfg.dataset_name == "ag_news":
+            texts = [f"Article: {item['text']}\nCategory:" for item in batch]
         else:
             raise ValueError(f"Unsupported dataset config: {cfg.dataset_config}")
         labels = torch.tensor([item['label'] for item in batch], dtype=torch.long)
@@ -103,6 +109,18 @@ def train_classification(cfg: TrainConfig) -> dict[str, Any]:
         token_yes = tokenizer.encode(" Yes")[0]
         token_no = tokenizer.encode(" No")[0]
         verbalizer = torch.tensor([token_yes, token_no]).to(device)
+    elif cfg.dataset_config == "boolq":
+        # Verbalizer Map: BoolQ labels are 0: False (No), 1: True (Yes)
+        token_yes = tokenizer.encode(" Yes")[0]
+        token_no = tokenizer.encode(" No")[0]
+        verbalizer = torch.tensor([token_no, token_yes]).to(device)
+    elif cfg.dataset_name == "ag_news":
+        # Verbalizer Map: AG News labels are 0: World, 1: Sports, 2: Business, 3: Sci/Tech
+        token_world = tokenizer.encode(" World")[0]
+        token_sports = tokenizer.encode(" Sports")[0]
+        token_business = tokenizer.encode(" Business")[0]
+        token_tech = tokenizer.encode(" Tech")[0]
+        verbalizer = torch.tensor([token_world, token_sports, token_business, token_tech]).to(device)
     else:
         raise ValueError(f"Unsupported dataset config: {cfg.dataset_config}")
 

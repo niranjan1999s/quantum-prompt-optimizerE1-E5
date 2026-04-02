@@ -1,0 +1,65 @@
+{
+  "config": {
+    "dataset_name": "ag_news",
+    "dataset_config": "default",
+    "model_name": "gpt2",
+    "epochs": 5,
+    "lr": 0.01,
+    "n_qubits": 8,
+    "n_layers": 30,
+    "embed_dim": 768,
+    "seed": 1,
+    "batch_size": 8,
+    "print_every": 1,
+    "checkpoint_every": 0,
+    "entanglement_mode": "full",
+    "plot": false
+  },
+  "quantum_loss_history": [
+    3.0861206912994383,
+    0.6845586776733399,
+    0.5785090065002442,
+    0.6272890472412109,
+    0.4521839815378189
+  ],
+  "david_loss_history": [
+    6.4638371086120605,
+    1.8161160969734191,
+    0.7117132079601288,
+    0.6064102149009705,
+    0.5474026477336884
+  ],
+  "classical_loss_history": [
+    3.635488097667694,
+    0.7845489001274109,
+    0.7621528160572052,
+    0.8314502966403962,
+    0.6352538919448852
+  ],
+  "quantum_acc_history": [
+    0.232,
+    0.286,
+    0.352,
+    0.334,
+    0.332
+  ],
+  "david_acc_history": [
+    0.46,
+    0.33,
+    0.318,
+    0.35,
+    0.356
+  ],
+  "classical_acc_history": [
+    0.256,
+    0.254,
+    0.254,
+    0.262,
+    0.298
+  ],
+  "q_quantum_only": 720,
+  "q_total_params": 7632,
+  "d_total_params": 7632,
+  "c_total_params": 527872,
+  "run_dir": "experiments\\gpt2\\default\\seed1_ep5_full"
+}
