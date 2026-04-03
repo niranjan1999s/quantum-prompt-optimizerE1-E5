@@ -1,6 +1,6 @@
 {
-  "dataset_name": "ag_news",
-  "dataset_config": "default",
+  "dataset_name": "glue",
+  "dataset_config": "sst2",
   "model_name": "gpt2",
   "epochs": 5,
   "lr": 0.01,

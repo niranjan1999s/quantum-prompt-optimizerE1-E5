@@ -32,6 +32,8 @@ class TrainConfig:
     checkpoint_every: int = 10
     entanglement_mode: str = "full"
     plot: bool = False
+    eval_only: bool = False
+    load_ckpt: str = ""
 
 def _freeze(model: torch.nn.Module) -> None:
     model.eval()
@@ -72,6 +74,9 @@ def train_classification(cfg: TrainConfig) -> dict[str, Any]:
     exp_root = Path("experiments") / cfg.model_name / cfg.dataset_config
     exp_root.mkdir(parents=True, exist_ok=True)
     run_dir = exp_root / f"seed{cfg.seed}_ep{cfg.epochs}_{cfg.entanglement_mode}"
+    if cfg.eval_only and cfg.load_ckpt:
+        run_dir = Path(cfg.load_ckpt).parent / f"eval_on_{cfg.dataset_name}_{cfg.dataset_config}"
+    
     run_dir.mkdir(parents=True, exist_ok=True)
     (run_dir / "config.json").write_text(json.dumps(asdict(cfg), indent=2))
 
@@ -129,6 +134,14 @@ def train_classification(cfg: TrainConfig) -> dict[str, Any]:
     opt_quantum = optim.Adam(quantum_agent.parameters(), lr=cfg.lr)
     opt_david = optim.Adam(david_agent.parameters(), lr=cfg.lr)
     opt_classical = optim.Adam(classical_agent.parameters(), lr=cfg.lr)
+    
+    if cfg.load_ckpt:
+        print(f"Loading Checkpoint: {cfg.load_ckpt}")
+        ckpt = torch.load(cfg.load_ckpt, map_location=device)
+        quantum_agent.load_state_dict(ckpt["quantum_state"])
+        david_agent.load_state_dict(ckpt["david_state"])
+        classical_agent.load_state_dict(ckpt["classical_state"])
+
     loss_fn = nn.CrossEntropyLoss()
 
     quantum_loss_history: list[float] = []
@@ -139,67 +152,66 @@ def train_classification(cfg: TrainConfig) -> dict[str, Any]:
     david_acc_history: list[float] = []
     classical_acc_history: list[float] = []
 
-    for epoch in range(cfg.epochs):
-        quantum_agent.train()
-        david_agent.train()
-        classical_agent.train()
-        
-        q_epoch_loss, d_epoch_loss, c_epoch_loss = 0.0, 0.0, 0.0
-        
-        for batch_idx, (input_ids, attention_mask, labels) in enumerate(train_loader):
-            input_ids = input_ids.to(device)
-            labels = labels.to(device)
-            target_ids = verbalizer[labels] 
+    for epoch in range(cfg.epochs if not cfg.eval_only else 1):
+        if not cfg.eval_only:
+            quantum_agent.train()
+            david_agent.train()
+            classical_agent.train()
             
-            # Since pad_side='left', the last token is always at sequence length!
-            batch_sz, seq_len = input_ids.shape
-            # Get hard embeddings
-            hard_embeddings = llm.transformer.wte(input_ids)
+            q_epoch_loss, d_epoch_loss, c_epoch_loss = 0.0, 0.0, 0.0
             
-            # --- Quantum Agent ---
-            opt_quantum.zero_grad(set_to_none=True)
-            q_prompt = quantum_agent() # shape: (768,)
-            q_soft_prompt = q_prompt.unsqueeze(0).unsqueeze(0).expand(batch_sz, 1, -1)
-            q_input_embeds = torch.cat([q_soft_prompt, hard_embeddings], dim=1)
-            q_outputs = llm(inputs_embeds=q_input_embeds)
-            q_logits = q_outputs.logits[:, -1, :] # Predict next token after "Sentiment:"
-            q_loss = loss_fn(q_logits, target_ids)
-            q_loss.backward()
-            opt_quantum.step()
-            q_epoch_loss += q_loss.item()
-            
-            # --- David Agent ---
-            opt_david.zero_grad(set_to_none=True)
-            d_prompt = david_agent(dummy_input)
-            d_soft_prompt = d_prompt.unsqueeze(0).unsqueeze(0).expand(batch_sz, 1, -1)
-            d_input_embeds = torch.cat([d_soft_prompt, hard_embeddings], dim=1)
-            d_outputs = llm(inputs_embeds=d_input_embeds)
-            d_logits = d_outputs.logits[:, -1, :]
-            d_loss = loss_fn(d_logits, target_ids)
-            d_loss.backward()
-            opt_david.step()
-            d_epoch_loss += d_loss.item()
-            
-            # --- Classical Goliath Agent ---
-            opt_classical.zero_grad(set_to_none=True)
-            c_prompt = classical_agent(dummy_input)
-            c_soft_prompt = c_prompt.unsqueeze(0).unsqueeze(0).expand(batch_sz, 1, -1)
-            c_input_embeds = torch.cat([c_soft_prompt, hard_embeddings], dim=1)
-            c_outputs = llm(inputs_embeds=c_input_embeds)
-            c_logits = c_outputs.logits[:, -1, :]
-            c_loss = loss_fn(c_logits, target_ids)
-            c_loss.backward()
-            opt_classical.step()
-            c_epoch_loss += c_loss.item()
-            
-            if batch_idx % 20 == 0:
-                print(f"Epoch {epoch} | Batch {batch_idx}/{len(train_loader)} | QL: {q_loss.item():.3f} DL: {d_loss.item():.3f} CL: {c_loss.item():.3f}")
-                import sys; sys.stdout.flush()
+            for batch_idx, (input_ids, attention_mask, labels) in enumerate(train_loader):
+                input_ids = input_ids.to(device)
+                labels = labels.to(device)
+                target_ids = verbalizer[labels] 
                 
-        # Epoch averages
-        quantum_loss_history.append(q_epoch_loss / len(train_loader))
-        david_loss_history.append(d_epoch_loss / len(train_loader))
-        classical_loss_history.append(c_epoch_loss / len(train_loader))
+                batch_sz, seq_len = input_ids.shape
+                hard_embeddings = llm.transformer.wte(input_ids)
+                
+                # --- Quantum Agent ---
+                opt_quantum.zero_grad(set_to_none=True)
+                q_prompt = quantum_agent()
+                q_soft_prompt = q_prompt.unsqueeze(0).unsqueeze(0).expand(batch_sz, 1, -1)
+                q_input_embeds = torch.cat([q_soft_prompt, hard_embeddings], dim=1)
+                q_outputs = llm(inputs_embeds=q_input_embeds)
+                q_logits = q_outputs.logits[:, -1, :] 
+                q_loss = loss_fn(q_logits, target_ids)
+                q_loss.backward()
+                opt_quantum.step()
+                q_epoch_loss += q_loss.item()
+                
+                # --- David Agent ---
+                opt_david.zero_grad(set_to_none=True)
+                d_prompt = david_agent(dummy_input)
+                d_soft_prompt = d_prompt.unsqueeze(0).unsqueeze(0).expand(batch_sz, 1, -1)
+                d_input_embeds = torch.cat([d_soft_prompt, hard_embeddings], dim=1)
+                d_outputs = llm(inputs_embeds=d_input_embeds)
+                d_logits = d_outputs.logits[:, -1, :]
+                d_loss = loss_fn(d_logits, target_ids)
+                d_loss.backward()
+                opt_david.step()
+                d_epoch_loss += d_loss.item()
+                
+                # --- Classical Goliath Agent ---
+                opt_classical.zero_grad(set_to_none=True)
+                c_prompt = classical_agent(dummy_input)
+                c_soft_prompt = c_prompt.unsqueeze(0).unsqueeze(0).expand(batch_sz, 1, -1)
+                c_input_embeds = torch.cat([c_soft_prompt, hard_embeddings], dim=1)
+                c_outputs = llm(inputs_embeds=c_input_embeds)
+                c_logits = c_outputs.logits[:, -1, :]
+                c_loss = loss_fn(c_logits, target_ids)
+                c_loss.backward()
+                opt_classical.step()
+                c_epoch_loss += c_loss.item()
+                
+                if batch_idx % 20 == 0:
+                    print(f"Epoch {epoch} | Batch {batch_idx}/{len(train_loader)} | QL: {q_loss.item():.3f} DL: {d_loss.item():.3f} CL: {c_loss.item():.3f}")
+                    import sys; sys.stdout.flush()
+                    
+            # Epoch averages
+            quantum_loss_history.append(q_epoch_loss / len(train_loader))
+            david_loss_history.append(d_epoch_loss / len(train_loader))
+            classical_loss_history.append(c_epoch_loss / len(train_loader))
         
         # Validation Loop
         quantum_agent.eval()
@@ -248,7 +260,7 @@ def train_classification(cfg: TrainConfig) -> dict[str, Any]:
         david_acc_history.append(d_acc)
         classical_acc_history.append(c_acc)
 
-        if cfg.checkpoint_every > 0 and (epoch % cfg.checkpoint_every == 0 or epoch == cfg.epochs - 1):
+        if not cfg.eval_only and cfg.checkpoint_every > 0 and (epoch % cfg.checkpoint_every == 0 or epoch == cfg.epochs - 1):
             ckpt_path = run_dir / f"ckpt_epoch_{epoch:03d}.pt"
             torch.save({
                 "epoch": epoch,
@@ -267,12 +279,12 @@ def train_classification(cfg: TrainConfig) -> dict[str, Any]:
                 "classical_acc_history": classical_acc_history,
             }, ckpt_path)
 
-        if cfg.print_every > 0 and epoch % cfg.print_every == 0:
+        if cfg.eval_only or (cfg.print_every > 0 and epoch % cfg.print_every == 0):
             print(
-                f"Epoch {epoch:3d} | "
-                f"Q-Acc: {q_acc:.3f} | "
-                f"D-Acc: {d_acc:.3f} | "
-                f"C-Acc: {c_acc:.3f}"
+                f"Eval {'Only' if cfg.eval_only else epoch} | "
+                f"Q-Acc: {q_acc:.4f} | "
+                f"D-Acc: {d_acc:.4f} | "
+                f"C-Acc: {c_acc:.4f}"
             )
 
     result: dict[str, Any] = {
@@ -310,6 +322,8 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--entanglement-mode", default=TrainConfig.entanglement_mode,
                     choices=["full", "no_entangle", "separable"])
     p.add_argument("--plot", action="store_true")
+    p.add_argument("--eval-only", action="store_true")
+    p.add_argument("--load-ckpt", type=str, default=TrainConfig.load_ckpt)
     args = p.parse_args(argv)
 
     cfg = TrainConfig(
@@ -327,6 +341,8 @@ def main(argv: list[str] | None = None) -> None:
         checkpoint_every=args.checkpoint_every,
         entanglement_mode=args.entanglement_mode,
         plot=args.plot,
+        eval_only=args.eval_only,
+        load_ckpt=args.load_ckpt,
     )
     train_classification(cfg)
 
