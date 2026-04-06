@@ -1,0 +1,18 @@
+{
+  "dataset_name": "glue",
+  "dataset_config": "sst2",
+  "model_name": "gpt2",
+  "epochs": 5,
+  "lr": 0.01,
+  "n_qubits": 8,
+  "n_layers": 30,
+  "embed_dim": 768,
+  "seed": 4,
+  "batch_size": 8,
+  "print_every": 1,
+  "checkpoint_every": 5,
+  "entanglement_mode": "full",
+  "plot": false,
+  "eval_only": false,
+  "load_ckpt": ""
+}

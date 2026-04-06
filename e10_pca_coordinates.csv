@@ -1,0 +1,121 @@
+Agent,Task,PC1,PC2
+Quantum,SST-2,6.6424,10.0110
+David,SST-2,3.1423,5.7994
+Goliath,SST-2,47.2745,1.7318
+Quantum,SST-2,6.9931,15.1303
+David,SST-2,3.3597,6.2270
+Goliath,SST-2,46.4506,1.2050
+Quantum,SST-2,8.1705,12.2961
+David,SST-2,4.0241,5.5122
+Goliath,SST-2,47.0471,2.1844
+Quantum,SST-2,5.7440,12.7323
+David,SST-2,2.0426,11.9733
+Goliath,SST-2,49.9323,0.9000
+Quantum,SST-2,9.9374,16.6535
+David,SST-2,4.0685,4.9038
+Goliath,SST-2,48.2144,0.2705
+Quantum,SST-2,8.7178,13.4124
+David,SST-2,3.8952,3.8797
+Goliath,SST-2,54.9437,-4.1751
+Quantum,SST-2,5.8307,15.3781
+David,SST-2,3.8880,1.5955
+Goliath,SST-2,47.4278,1.4655
+Quantum,SST-2,5.7258,10.3244
+David,SST-2,3.5112,2.0869
+Goliath,SST-2,46.5574,0.7841
+Quantum,SST-2,7.1517,11.1675
+David,SST-2,4.1875,2.8389
+Goliath,SST-2,53.2287,-6.2954
+Quantum,SST-2,7.0070,18.6865
+David,SST-2,4.1726,-1.2633
+Goliath,SST-2,52.4679,-1.2010
+Quantum,RTE,-4.8972,0.3147
+David,RTE,-5.1605,0.0943
+Goliath,RTE,41.8320,-45.1029
+Quantum,RTE,-6.3376,-1.0649
+David,RTE,-5.4022,-0.7670
+Goliath,RTE,64.8876,-134.5254
+Quantum,RTE,-2.8073,-1.0069
+David,RTE,-1.0896,1.4504
+Goliath,RTE,48.3235,-2.4376
+Quantum,RTE,-5.2637,-1.1799
+David,RTE,-7.0872,3.9061
+Goliath,RTE,42.9632,-83.8113
+Quantum,RTE,-9.1774,-2.4623
+David,RTE,-4.9862,-0.6517
+Goliath,RTE,48.7670,-39.1704
+Quantum,RTE,-8.2330,-1.7796
+David,RTE,-2.1393,-0.0961
+Goliath,RTE,50.7673,-23.8391
+Quantum,RTE,-1.3588,6.6320
+David,RTE,-2.1627,-1.5329
+Goliath,RTE,49.1128,-2.6489
+Quantum,RTE,-7.0039,-4.1463
+David,RTE,-8.2298,-3.9221
+Goliath,RTE,48.0280,-19.7037
+Quantum,RTE,-4.7067,2.8250
+David,RTE,-7.9058,-4.9561
+Goliath,RTE,25.8756,-58.7860
+Quantum,RTE,-2.3325,4.0457
+David,RTE,-8.4720,-11.2692
+Goliath,RTE,-1155.1466,-480.3543
+Quantum,BoolQ,-6.4015,-1.1887
+David,BoolQ,-3.1170,2.6472
+Goliath,BoolQ,49.0813,-14.3813
+Quantum,BoolQ,-12.6002,-0.2952
+David,BoolQ,-4.3634,1.7708
+Goliath,BoolQ,35.5277,-25.3014
+Quantum,BoolQ,-13.5300,-3.9155
+David,BoolQ,-4.3738,2.9557
+Goliath,BoolQ,24.2822,-28.2400
+Quantum,BoolQ,-26.5099,-4.6202
+David,BoolQ,-7.4181,6.3956
+Goliath,BoolQ,40.2076,-25.1958
+Quantum,BoolQ,-16.8938,-5.6391
+David,BoolQ,-4.3364,1.8604
+Goliath,BoolQ,45.4258,-39.7439
+Quantum,BoolQ,-18.8993,-5.9779
+David,BoolQ,-1.9847,1.5476
+Goliath,BoolQ,52.1704,-54.0873
+Quantum,BoolQ,-8.7669,-1.1989
+David,BoolQ,-3.0305,-0.8005
+Goliath,BoolQ,51.1579,-4.4123
+Quantum,BoolQ,-24.4031,-3.3705
+David,BoolQ,-6.6998,-0.6475
+Goliath,BoolQ,11.8927,-40.0201
+Quantum,BoolQ,-17.9059,-5.2844
+David,BoolQ,-4.9624,-1.2680
+Goliath,BoolQ,102.8032,-107.9902
+Quantum,BoolQ,-15.7634,2.3088
+David,BoolQ,-8.0892,-9.2668
+Goliath,BoolQ,50.9793,-12.1015
+Quantum,AG News,15.8112,-13.4370
+David,AG News,4.4239,-1.5835
+Goliath,AG News,-809.5405,677.5613
+Quantum,AG News,13.1000,-10.2460
+David,AG News,5.6356,-0.8036
+Goliath,AG News,65.6297,33.7366
+Quantum,AG News,13.4299,-10.1453
+David,AG News,5.7943,0.1813
+Goliath,AG News,104.8785,34.5697
+Quantum,AG News,14.1933,-13.5636
+David,AG News,2.9945,5.1910
+Goliath,AG News,54.7312,10.5003
+Quantum,AG News,14.8777,-13.1995
+David,AG News,8.9137,-4.5135
+Goliath,AG News,74.3658,87.1226
+Quantum,AG News,15.1869,-14.1062
+David,AG News,4.8993,-0.6589
+Goliath,AG News,49.7261,1.5663
+Quantum,AG News,15.4047,-7.5768
+David,AG News,6.3956,-3.3567
+Goliath,AG News,28.7248,105.3454
+Quantum,AG News,15.6927,-14.1223
+David,AG News,6.4359,-5.0626
+Goliath,AG News,43.8786,102.9681
+Quantum,AG News,13.0867,-10.4730
+David,AG News,9.4791,-6.0964
+Goliath,AG News,102.0862,42.6602
+Quantum,AG News,11.0888,-1.9186
+David,AG News,9.7465,-14.3007
+Goliath,AG News,63.0365,148.9532

@@ -10,7 +10,9 @@
   "seed": 6,
   "batch_size": 2,
   "print_every": 1,
-  "checkpoint_every": 0,
+  "checkpoint_every": 5,
   "entanglement_mode": "full",
-  "plot": false
+  "plot": false,
+  "eval_only": false,
+  "load_ckpt": ""
 }
