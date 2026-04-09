@@ -11,18 +11,19 @@
     "seed": 7,
     "batch_size": 8,
     "print_every": 1,
-    "checkpoint_every": 5,
+    "checkpoint_every": 0,
     "entanglement_mode": "full",
     "plot": false,
     "eval_only": false,
-    "load_ckpt": ""
+    "load_ckpt": "",
+    "noise_rate": 0.05
   },
   "quantum_loss_history": [
-    2.5945653891563416,
-    0.6994745326042175,
-    0.6862611317634583,
-    0.6445699524879456,
-    0.6368084907531738
+    4.661840448379516,
+    1.2641435384750366,
+    0.7991927027702331,
+    0.7362230920791626,
+    0.6909562087059021
   ],
   "david_loss_history": [
     3.734273386001587,
@@ -39,11 +40,11 @@
     0.5731274950504303
   ],
   "quantum_acc_history": [
+    0.62,
     0.484,
-    0.564,
-    0.54,
-    0.612,
-    0.62
+    0.498,
+    0.554,
+    0.514
   ],
   "david_acc_history": [
     0.472,

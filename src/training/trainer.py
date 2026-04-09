@@ -34,6 +34,7 @@ class TrainConfig:
     plot: bool = False
     eval_only: bool = False
     load_ckpt: str = ""
+    noise_rate: float = 0.0
 
 def _freeze(model: torch.nn.Module) -> None:
     model.eval()
@@ -56,7 +57,7 @@ def train_classification(cfg: TrainConfig) -> dict[str, Any]:
 
     quantum_agent = HighCapacityQuantumAgent(
         n_qubits=cfg.n_qubits, n_layers=cfg.n_layers, embed_dim=cfg.embed_dim,
-        entanglement_mode=cfg.entanglement_mode
+        entanglement_mode=cfg.entanglement_mode, noise_rate=cfg.noise_rate
     ).to(device)
     
     q_quantum_only = cfg.n_layers * cfg.n_qubits * 3
@@ -324,6 +325,7 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--plot", action="store_true")
     p.add_argument("--eval-only", action="store_true")
     p.add_argument("--load-ckpt", type=str, default=TrainConfig.load_ckpt)
+    p.add_argument("--noise-rate", type=float, default=TrainConfig.noise_rate)
     args = p.parse_args(argv)
 
     cfg = TrainConfig(
@@ -343,6 +345,7 @@ def main(argv: list[str] | None = None) -> None:
         plot=args.plot,
         eval_only=args.eval_only,
         load_ckpt=args.load_ckpt,
+        noise_rate=args.noise_rate,
     )
     train_classification(cfg)
 

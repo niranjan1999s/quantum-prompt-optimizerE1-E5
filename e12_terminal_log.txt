@@ -1,0 +1,955 @@
+﻿imits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 2647.48it/s]
+Epoch 0 | Batch 0/25 | QL: 9.564 DL: 8.381 CL: 6.142
+Epoch 0 | Batch 20/25 | QL: 0.855 DL: 4.747 CL: 0.869
+Eval 0 | Q-Acc: 0.5540 | D-Acc: 0.6560 | C-Acc: 0.6160
+Epoch 1 | Batch 0/25 | QL: 0.965 DL: 4.569 CL: 0.633
+Epoch 1 | Batch 20/25 | QL: 0.616 DL: 0.818 CL: 0.627
+Eval 1 | Q-Acc: 0.5340 | D-Acc: 0.4680 | C-Acc: 0.6420
+Epoch 2 | Batch 0/25 | QL: 0.646 DL: 0.926 CL: 0.579
+Epoch 2 | Batch 20/25 | QL: 0.775 DL: 0.725 CL: 0.785
+Eval 2 | Q-Acc: 0.4800 | D-Acc: 0.4680 | C-Acc: 0.7100
+Epoch 3 | Batch 0/25 | QL: 0.666 DL: 0.777 CL: 0.497
+Epoch 3 | Batch 20/25 | QL: 0.670 DL: 0.658 CL: 0.586
+Eval 3 | Q-Acc: 0.5460 | D-Acc: 0.6920 | C-Acc: 0.6640
+Epoch 4 | Batch 0/25 | QL: 0.809 DL: 0.751 CL: 0.680
+Epoch 4 | Batch 20/25 | QL: 0.657 DL: 0.608 CL: 0.670
+Eval 4 | Q-Acc: 0.6920 | D-Acc: 0.6760 | C-Acc: 0.7100
+
+--- Noise 0.0 | Seed: 4 ---
+Training on device: cuda
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 3664.86it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Epoch 0 | Batch 0/25 | QL: 9.202 DL: 6.543 CL: 6.004
+Epoch 0 | Batch 20/25 | QL: 1.106 DL: 2.879 CL: 1.277
+Eval 0 | Q-Acc: 0.5700 | D-Acc: 0.5340 | C-Acc: 0.5100
+Epoch 1 | Batch 0/25 | QL: 0.896 DL: 1.681 CL: 0.614
+Epoch 1 | Batch 20/25 | QL: 0.679 DL: 0.893 CL: 0.543
+Eval 1 | Q-Acc: 0.5040 | D-Acc: 0.5440 | C-Acc: 0.4780
+Epoch 2 | Batch 0/25 | QL: 0.805 DL: 0.662 CL: 0.910
+Epoch 2 | Batch 20/25 | QL: 0.545 DL: 0.576 CL: 0.465
+Eval 2 | Q-Acc: 0.6360 | D-Acc: 0.5100 | C-Acc: 0.7080
+Epoch 3 | Batch 0/25 | QL: 0.631 DL: 0.697 CL: 0.650
+Epoch 3 | Batch 20/25 | QL: 0.644 DL: 0.689 CL: 0.484
+Eval 3 | Q-Acc: 0.6460 | D-Acc: 0.6480 | C-Acc: 0.6680
+Epoch 4 | Batch 0/25 | QL: 0.578 DL: 0.525 CL: 0.465
+Epoch 4 | Batch 20/25 | QL: 0.472 DL: 0.480 CL: 0.553
+Eval 4 | Q-Acc: 0.7200 | D-Acc: 0.6580 | C-Acc: 0.6080
+
+--- Noise 0.0 | Seed: 5 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 4801.87it/s]
+Epoch 0 | Batch 0/25 | QL: 10.845 DL: 7.733 CL: 6.916
+Epoch 0 | Batch 20/25 | QL: 1.531 DL: 5.691 CL: 0.856
+Eval 0 | Q-Acc: 0.5960 | D-Acc: 0.7020 | C-Acc: 0.5760
+Epoch 1 | Batch 0/25 | QL: 0.834 DL: 6.029 CL: 0.712
+Epoch 1 | Batch 20/25 | QL: 0.764 DL: 4.453 CL: 0.620
+Eval 1 | Q-Acc: 0.4800 | D-Acc: 0.5880 | C-Acc: 0.4760
+Epoch 2 | Batch 0/25 | QL: 0.615 DL: 2.306 CL: 0.529
+Epoch 2 | Batch 20/25 | QL: 0.661 DL: 0.634 CL: 0.623
+Eval 2 | Q-Acc: 0.6640 | D-Acc: 0.6200 | C-Acc: 0.6260
+Epoch 3 | Batch 0/25 | QL: 0.632 DL: 0.657 CL: 0.568
+Epoch 3 | Batch 20/25 | QL: 0.672 DL: 0.602 CL: 0.664
+Eval 3 | Q-Acc: 0.5940 | D-Acc: 0.6260 | C-Acc: 0.7600
+Epoch 4 | Batch 0/25 | QL: 0.403 DL: 0.516 CL: 0.392
+Epoch 4 | Batch 20/25 | QL: 0.662 DL: 0.652 CL: 0.553
+Eval 4 | Q-Acc: 0.6540 | D-Acc: 0.6460 | C-Acc: 0.5240
+
+--- Noise 0.0 | Seed: 6 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 6846.94it/s]
+Epoch 0 | Batch 0/25 | QL: 6.705 DL: 6.988 CL: 6.534
+Epoch 0 | Batch 20/25 | QL: 0.701 DL: 3.764 CL: 0.722
+Eval 0 | Q-Acc: 0.5880 | D-Acc: 0.5280 | C-Acc: 0.5540
+Epoch 1 | Batch 0/25 | QL: 0.683 DL: 2.558 CL: 0.735
+Epoch 1 | Batch 20/25 | QL: 0.647 DL: 0.694 CL: 0.787
+Eval 1 | Q-Acc: 0.5720 | D-Acc: 0.5180 | C-Acc: 0.5560
+Epoch 2 | Batch 0/25 | QL: 0.608 DL: 0.571 CL: 0.674
+Epoch 2 | Batch 20/25 | QL: 0.588 DL: 0.592 CL: 0.494
+Eval 2 | Q-Acc: 0.5800 | D-Acc: 0.5880 | C-Acc: 0.6160
+Epoch 3 | Batch 0/25 | QL: 0.541 DL: 0.613 CL: 0.622
+Epoch 3 | Batch 20/25 | QL: 0.761 DL: 0.594 CL: 0.576
+Eval 3 | Q-Acc: 0.7040 | D-Acc: 0.6180 | C-Acc: 0.6640
+Epoch 4 | Batch 0/25 | QL: 0.465 DL: 0.674 CL: 0.529
+Epoch 4 | Batch 20/25 | QL: 0.317 DL: 0.413 CL: 0.342
+Eval 4 | Q-Acc: 0.7400 | D-Acc: 0.6460 | C-Acc: 0.6840
+
+--- Noise 0.0 | Seed: 7 ---
+Training on device: cuda
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 6289.14it/s]
+Epoch 0 | Batch 0/25 | QL: 8.471 DL: 7.416 CL: 6.787
+Epoch 0 | Batch 20/25 | QL: 0.905 DL: 1.361 CL: 1.410
+Eval 0 | Q-Acc: 0.4840 | D-Acc: 0.4720 | C-Acc: 0.4860
+Epoch 1 | Batch 0/25 | QL: 0.647 DL: 0.823 CL: 0.702
+Epoch 1 | Batch 20/25 | QL: 0.755 DL: 0.830 CL: 0.648
+Eval 1 | Q-Acc: 0.5640 | D-Acc: 0.5500 | C-Acc: 0.5880
+Epoch 2 | Batch 0/25 | QL: 0.762 DL: 0.844 CL: 0.766
+Epoch 2 | Batch 20/25 | QL: 0.806 DL: 0.879 CL: 0.815
+Eval 2 | Q-Acc: 0.5400 | D-Acc: 0.5700 | C-Acc: 0.6560
+Epoch 3 | Batch 0/25 | QL: 0.544 DL: 0.669 CL: 0.598
+Epoch 3 | Batch 20/25 | QL: 0.594 DL: 0.599 CL: 0.549
+Eval 3 | Q-Acc: 0.6120 | D-Acc: 0.5980 | C-Acc: 0.6840
+Epoch 4 | Batch 0/25 | QL: 0.626 DL: 0.612 CL: 0.425
+Epoch 4 | Batch 20/25 | QL: 0.760 DL: 0.628 CL: 0.646
+Eval 4 | Q-Acc: 0.6200 | D-Acc: 0.6480 | C-Acc: 0.5920
+
+--- Noise 0.0 | Seed: 8 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 6846.86it/s]
+Epoch 0 | Batch 0/25 | QL: 7.827 DL: 8.735 CL: 6.830
+Epoch 0 | Batch 20/25 | QL: 1.060 DL: 3.669 CL: 0.602
+Eval 0 | Q-Acc: 0.5280 | D-Acc: 0.5420 | C-Acc: 0.5380
+Epoch 1 | Batch 0/25 | QL: 0.692 DL: 3.668 CL: 0.688
+Epoch 1 | Batch 20/25 | QL: 0.729 DL: 1.051 CL: 0.741
+Eval 1 | Q-Acc: 0.4880 | D-Acc: 0.4680 | C-Acc: 0.4740
+Epoch 2 | Batch 0/25 | QL: 0.772 DL: 0.863 CL: 0.627
+Epoch 2 | Batch 20/25 | QL: 0.789 DL: 0.627 CL: 0.698
+Eval 2 | Q-Acc: 0.5820 | D-Acc: 0.5300 | C-Acc: 0.6380
+Epoch 3 | Batch 0/25 | QL: 0.620 DL: 0.469 CL: 0.598
+Epoch 3 | Batch 20/25 | QL: 0.574 DL: 0.681 CL: 0.423
+Eval 3 | Q-Acc: 0.6400 | D-Acc: 0.5020 | C-Acc: 0.7620
+Epoch 4 | Batch 0/25 | QL: 0.563 DL: 0.653 CL: 0.372
+Epoch 4 | Batch 20/25 | QL: 0.652 DL: 0.697 CL: 0.371
+Eval 4 | Q-Acc: 0.6720 | D-Acc: 0.5020 | C-Acc: 0.7560
+
+--- Noise 0.0 | Seed: 9 ---
+Training on device: cuda
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 2714.07it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Epoch 0 | Batch 0/25 | QL: 10.014 DL: 7.419 CL: 6.794
+Epoch 0 | Batch 20/25 | QL: 0.891 DL: 1.083 CL: 0.772
+Eval 0 | Q-Acc: 0.5380 | D-Acc: 0.5360 | C-Acc: 0.5560
+Epoch 1 | Batch 0/25 | QL: 1.081 DL: 1.040 CL: 0.688
+Epoch 1 | Batch 20/25 | QL: 0.758 DL: 0.756 CL: 0.772
+Eval 1 | Q-Acc: 0.6600 | D-Acc: 0.5320 | C-Acc: 0.6560
+Epoch 2 | Batch 0/25 | QL: 0.748 DL: 0.682 CL: 0.686
+Epoch 2 | Batch 20/25 | QL: 0.712 DL: 0.724 CL: 0.648
+Eval 2 | Q-Acc: 0.4740 | D-Acc: 0.4840 | C-Acc: 0.4700
+Epoch 3 | Batch 0/25 | QL: 0.635 DL: 0.621 CL: 0.631
+Epoch 3 | Batch 20/25 | QL: 0.709 DL: 0.735 CL: 0.628
+Eval 3 | Q-Acc: 0.7180 | D-Acc: 0.5380 | C-Acc: 0.7640
+Epoch 4 | Batch 0/25 | QL: 0.587 DL: 0.718 CL: 0.533
+Epoch 4 | Batch 20/25 | QL: 0.597 DL: 0.623 CL: 0.479
+Eval 4 | Q-Acc: 0.7240 | D-Acc: 0.5860 | C-Acc: 0.7380
+
+========== Noise Rate: 0.001 ==========
+
+--- Noise 0.001 | Seed: 0 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 5615.98it/s]
+Epoch 0 | Batch 0/25 | QL: 8.002 DL: 7.126 CL: 6.774
+Epoch 0 | Batch 20/25 | QL: 0.772 DL: 3.944 CL: 0.928
+Eval 0 | Q-Acc: 0.4840 | D-Acc: 0.5920 | C-Acc: 0.5240
+Epoch 1 | Batch 0/25 | QL: 0.579 DL: 2.360 CL: 0.655
+Epoch 1 | Batch 20/25 | QL: 0.724 DL: 0.679 CL: 0.592
+Eval 1 | Q-Acc: 0.4700 | D-Acc: 0.4800 | C-Acc: 0.5220
+Epoch 2 | Batch 0/25 | QL: 0.743 DL: 0.682 CL: 0.626
+Epoch 2 | Batch 20/25 | QL: 0.815 DL: 0.725 CL: 1.383
+Eval 2 | Q-Acc: 0.5320 | D-Acc: 0.4900 | C-Acc: 0.6380
+Epoch 3 | Batch 0/25 | QL: 0.651 DL: 0.689 CL: 0.709
+Epoch 3 | Batch 20/25 | QL: 0.594 DL: 0.878 CL: 0.778
+Eval 3 | Q-Acc: 0.4840 | D-Acc: 0.5980 | C-Acc: 0.5100
+Epoch 4 | Batch 0/25 | QL: 0.938 DL: 0.756 CL: 0.927
+Epoch 4 | Batch 20/25 | QL: 0.550 DL: 0.662 CL: 0.626
+Eval 4 | Q-Acc: 0.7560 | D-Acc: 0.6060 | C-Acc: 0.6720
+
+--- Noise 0.001 | Seed: 1 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 2520.72it/s]
+Epoch 0 | Batch 0/25 | QL: 8.190 DL: 7.793 CL: 7.009
+Epoch 0 | Batch 20/25 | QL: 0.829 DL: 4.737 CL: 0.646
+Eval 0 | Q-Acc: 0.5860 | D-Acc: 0.6620 | C-Acc: 0.5020
+Epoch 1 | Batch 0/25 | QL: 0.782 DL: 3.198 CL: 0.784
+Epoch 1 | Batch 20/25 | QL: 0.741 DL: 0.729 CL: 0.745
+Eval 1 | Q-Acc: 0.5600 | D-Acc: 0.5760 | C-Acc: 0.6300
+Epoch 2 | Batch 0/25 | QL: 0.649 DL: 0.595 CL: 0.604
+Epoch 2 | Batch 20/25 | QL: 0.504 DL: 0.603 CL: 0.486
+Eval 2 | Q-Acc: 0.5900 | D-Acc: 0.6220 | C-Acc: 0.6980
+Epoch 3 | Batch 0/25 | QL: 0.759 DL: 0.728 CL: 0.497
+Epoch 3 | Batch 20/25 | QL: 0.637 DL: 0.640 CL: 0.448
+Eval 3 | Q-Acc: 0.6440 | D-Acc: 0.6780 | C-Acc: 0.6580
+Epoch 4 | Batch 0/25 | QL: 0.546 DL: 0.489 CL: 0.317
+Epoch 4 | Batch 20/25 | QL: 0.447 DL: 0.600 CL: 0.264
+Eval 4 | Q-Acc: 0.6780 | D-Acc: 0.6440 | C-Acc: 0.7740
+
+--- Noise 0.001 | Seed: 2 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 3829.16it/s]
+Epoch 0 | Batch 0/25 | QL: 8.741 DL: 7.133 CL: 6.696
+Epoch 0 | Batch 20/25 | QL: 1.334 DL: 4.787 CL: 0.896
+Eval 0 | Q-Acc: 0.5380 | D-Acc: 0.6460 | C-Acc: 0.5020
+Epoch 1 | Batch 0/25 | QL: 0.574 DL: 3.558 CL: 0.717
+Epoch 1 | Batch 20/25 | QL: 0.545 DL: 0.987 CL: 0.733
+Eval 1 | Q-Acc: 0.6420 | D-Acc: 0.4900 | C-Acc: 0.6280
+Epoch 2 | Batch 0/25 | QL: 0.640 DL: 0.722 CL: 0.674
+Epoch 2 | Batch 20/25 | QL: 0.708 DL: 0.669 CL: 0.752
+Eval 2 | Q-Acc: 0.6840 | D-Acc: 0.5320 | C-Acc: 0.6740
+Epoch 3 | Batch 0/25 | QL: 0.574 DL: 0.825 CL: 0.567
+Epoch 3 | Batch 20/25 | QL: 0.526 DL: 0.697 CL: 0.495
+Eval 3 | Q-Acc: 0.6680 | D-Acc: 0.5540 | C-Acc: 0.6620
+Epoch 4 | Batch 0/25 | QL: 0.361 DL: 0.640 CL: 0.500
+Epoch 4 | Batch 20/25 | QL: 0.442 DL: 0.534 CL: 0.361
+Eval 4 | Q-Acc: 0.6900 | D-Acc: 0.4880 | C-Acc: 0.6520
+
+--- Noise 0.001 | Seed: 3 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 3588.52it/s]
+Epoch 0 | Batch 0/25 | QL: 9.278 DL: 8.381 CL: 6.142
+Epoch 0 | Batch 20/25 | QL: 0.978 DL: 4.747 CL: 0.869
+Eval 0 | Q-Acc: 0.5380 | D-Acc: 0.6560 | C-Acc: 0.6160
+Epoch 1 | Batch 0/25 | QL: 0.960 DL: 4.569 CL: 0.633
+Epoch 1 | Batch 20/25 | QL: 0.700 DL: 0.818 CL: 0.627
+Eval 1 | Q-Acc: 0.5880 | D-Acc: 0.4680 | C-Acc: 0.6420
+Epoch 2 | Batch 0/25 | QL: 0.673 DL: 0.926 CL: 0.579
+Epoch 2 | Batch 20/25 | QL: 0.848 DL: 0.725 CL: 0.785
+Eval 2 | Q-Acc: 0.5640 | D-Acc: 0.4680 | C-Acc: 0.7100
+Epoch 3 | Batch 0/25 | QL: 0.583 DL: 0.777 CL: 0.497
+Epoch 3 | Batch 20/25 | QL: 0.644 DL: 0.658 CL: 0.586
+Eval 3 | Q-Acc: 0.6720 | D-Acc: 0.6920 | C-Acc: 0.6640
+Epoch 4 | Batch 0/25 | QL: 0.657 DL: 0.751 CL: 0.680
+Epoch 4 | Batch 20/25 | QL: 0.577 DL: 0.608 CL: 0.670
+Eval 4 | Q-Acc: 0.6640 | D-Acc: 0.6760 | C-Acc: 0.7100
+
+--- Noise 0.001 | Seed: 4 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 1824.26it/s]
+Epoch 0 | Batch 0/25 | QL: 8.834 DL: 6.543 CL: 6.004
+Epoch 0 | Batch 20/25 | QL: 1.101 DL: 2.879 CL: 1.277
+Eval 0 | Q-Acc: 0.5200 | D-Acc: 0.5340 | C-Acc: 0.5100
+Epoch 1 | Batch 0/25 | QL: 0.804 DL: 1.681 CL: 0.614
+Epoch 1 | Batch 20/25 | QL: 0.847 DL: 0.893 CL: 0.543
+Eval 1 | Q-Acc: 0.4800 | D-Acc: 0.5440 | C-Acc: 0.4780
+Epoch 2 | Batch 0/25 | QL: 0.883 DL: 0.662 CL: 0.910
+Epoch 2 | Batch 20/25 | QL: 0.563 DL: 0.576 CL: 0.465
+Eval 2 | Q-Acc: 0.4780 | D-Acc: 0.5100 | C-Acc: 0.7080
+Epoch 3 | Batch 0/25 | QL: 0.733 DL: 0.697 CL: 0.650
+Epoch 3 | Batch 20/25 | QL: 0.767 DL: 0.689 CL: 0.484
+Eval 3 | Q-Acc: 0.6700 | D-Acc: 0.6480 | C-Acc: 0.6680
+Epoch 4 | Batch 0/25 | QL: 0.561 DL: 0.525 CL: 0.465
+Epoch 4 | Batch 20/25 | QL: 0.596 DL: 0.480 CL: 0.553
+Eval 4 | Q-Acc: 0.6200 | D-Acc: 0.6580 | C-Acc: 0.6080
+
+--- Noise 0.001 | Seed: 5 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 1711.64it/s]
+Epoch 0 | Batch 0/25 | QL: 10.431 DL: 7.733 CL: 6.916
+Epoch 0 | Batch 20/25 | QL: 1.698 DL: 5.691 CL: 0.856
+Eval 0 | Q-Acc: 0.6320 | D-Acc: 0.7020 | C-Acc: 0.5760
+Epoch 1 | Batch 0/25 | QL: 0.938 DL: 6.029 CL: 0.712
+Epoch 1 | Batch 20/25 | QL: 0.801 DL: 4.453 CL: 0.620
+Eval 1 | Q-Acc: 0.4720 | D-Acc: 0.5880 | C-Acc: 0.4760
+Epoch 2 | Batch 0/25 | QL: 0.587 DL: 2.306 CL: 0.529
+Epoch 2 | Batch 20/25 | QL: 0.619 DL: 0.634 CL: 0.623
+Eval 2 | Q-Acc: 0.6700 | D-Acc: 0.6200 | C-Acc: 0.6260
+Epoch 3 | Batch 0/25 | QL: 0.696 DL: 0.657 CL: 0.568
+Epoch 3 | Batch 20/25 | QL: 0.694 DL: 0.602 CL: 0.664
+Eval 3 | Q-Acc: 0.6200 | D-Acc: 0.6260 | C-Acc: 0.7600
+Epoch 4 | Batch 0/25 | QL: 0.416 DL: 0.516 CL: 0.392
+Epoch 4 | Batch 20/25 | QL: 0.627 DL: 0.652 CL: 0.553
+Eval 4 | Q-Acc: 0.6460 | D-Acc: 0.6460 | C-Acc: 0.5240
+
+--- Noise 0.001 | Seed: 6 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 3568.04it/s]
+Epoch 0 | Batch 0/25 | QL: 6.680 DL: 6.988 CL: 6.534
+Epoch 0 | Batch 20/25 | QL: 0.707 DL: 3.764 CL: 0.722
+Eval 0 | Q-Acc: 0.5680 | D-Acc: 0.5280 | C-Acc: 0.5540
+Epoch 1 | Batch 0/25 | QL: 0.877 DL: 2.558 CL: 0.735
+Epoch 1 | Batch 20/25 | QL: 0.605 DL: 0.694 CL: 0.787
+Eval 1 | Q-Acc: 0.6500 | D-Acc: 0.5180 | C-Acc: 0.5560
+Epoch 2 | Batch 0/25 | QL: 0.741 DL: 0.571 CL: 0.674
+Epoch 2 | Batch 20/25 | QL: 0.631 DL: 0.592 CL: 0.494
+Eval 2 | Q-Acc: 0.6200 | D-Acc: 0.5880 | C-Acc: 0.6160
+Epoch 3 | Batch 0/25 | QL: 0.570 DL: 0.613 CL: 0.622
+Epoch 3 | Batch 20/25 | QL: 0.591 DL: 0.594 CL: 0.576
+Eval 3 | Q-Acc: 0.7120 | D-Acc: 0.6180 | C-Acc: 0.6640
+Epoch 4 | Batch 0/25 | QL: 0.571 DL: 0.674 CL: 0.529
+Epoch 4 | Batch 20/25 | QL: 0.410 DL: 0.413 CL: 0.342
+Eval 4 | Q-Acc: 0.7160 | D-Acc: 0.6460 | C-Acc: 0.6840
+
+--- Noise 0.001 | Seed: 7 ---
+Training on device: cuda
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 3113.45it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Epoch 0 | Batch 0/25 | QL: 8.155 DL: 7.416 CL: 6.787
+Epoch 0 | Batch 20/25 | QL: 0.682 DL: 1.361 CL: 1.410
+Eval 0 | Q-Acc: 0.4720 | D-Acc: 0.4720 | C-Acc: 0.4860
+Epoch 1 | Batch 0/25 | QL: 0.614 DL: 0.823 CL: 0.702
+Epoch 1 | Batch 20/25 | QL: 0.710 DL: 0.830 CL: 0.648
+Eval 1 | Q-Acc: 0.5860 | D-Acc: 0.5500 | C-Acc: 0.5880
+Epoch 2 | Batch 0/25 | QL: 0.866 DL: 0.844 CL: 0.766
+Epoch 2 | Batch 20/25 | QL: 0.861 DL: 0.879 CL: 0.815
+Eval 2 | Q-Acc: 0.5880 | D-Acc: 0.5700 | C-Acc: 0.6560
+Epoch 3 | Batch 0/25 | QL: 0.591 DL: 0.669 CL: 0.598
+Epoch 3 | Batch 20/25 | QL: 0.651 DL: 0.599 CL: 0.549
+Eval 3 | Q-Acc: 0.6740 | D-Acc: 0.5980 | C-Acc: 0.6840
+Epoch 4 | Batch 0/25 | QL: 0.568 DL: 0.612 CL: 0.425
+Epoch 4 | Batch 20/25 | QL: 0.787 DL: 0.628 CL: 0.646
+Eval 4 | Q-Acc: 0.6260 | D-Acc: 0.6480 | C-Acc: 0.5920
+
+--- Noise 0.001 | Seed: 8 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 2294.27it/s]
+Epoch 0 | Batch 0/25 | QL: 7.777 DL: 8.735 CL: 6.830
+Epoch 0 | Batch 20/25 | QL: 0.797 DL: 3.669 CL: 0.602
+Eval 0 | Q-Acc: 0.5560 | D-Acc: 0.5420 | C-Acc: 0.5380
+Epoch 1 | Batch 0/25 | QL: 0.633 DL: 3.668 CL: 0.688
+Epoch 1 | Batch 20/25 | QL: 0.686 DL: 1.051 CL: 0.741
+Eval 1 | Q-Acc: 0.5020 | D-Acc: 0.4680 | C-Acc: 0.4740
+Epoch 2 | Batch 0/25 | QL: 0.721 DL: 0.863 CL: 0.627
+Epoch 2 | Batch 20/25 | QL: 0.834 DL: 0.627 CL: 0.698
+Eval 2 | Q-Acc: 0.5420 | D-Acc: 0.5300 | C-Acc: 0.6380
+Epoch 3 | Batch 0/25 | QL: 0.616 DL: 0.469 CL: 0.598
+Epoch 3 | Batch 20/25 | QL: 0.705 DL: 0.681 CL: 0.423
+Eval 3 | Q-Acc: 0.5900 | D-Acc: 0.5020 | C-Acc: 0.7620
+Epoch 4 | Batch 0/25 | QL: 0.693 DL: 0.653 CL: 0.372
+Epoch 4 | Batch 20/25 | QL: 0.745 DL: 0.697 CL: 0.371
+Eval 4 | Q-Acc: 0.6140 | D-Acc: 0.5020 | C-Acc: 0.7560
+
+--- Noise 0.001 | Seed: 9 ---
+Training on device: cuda
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 3615.27it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Epoch 0 | Batch 0/25 | QL: 9.460 DL: 7.419 CL: 6.794
+Epoch 0 | Batch 20/25 | QL: 0.911 DL: 1.083 CL: 0.772
+Eval 0 | Q-Acc: 0.5340 | D-Acc: 0.5360 | C-Acc: 0.5560
+Epoch 1 | Batch 0/25 | QL: 1.034 DL: 1.040 CL: 0.688
+Epoch 1 | Batch 20/25 | QL: 0.769 DL: 0.756 CL: 0.772
+Eval 1 | Q-Acc: 0.5660 | D-Acc: 0.5320 | C-Acc: 0.6560
+Epoch 2 | Batch 0/25 | QL: 0.787 DL: 0.682 CL: 0.686
+Epoch 2 | Batch 20/25 | QL: 0.734 DL: 0.724 CL: 0.648
+Eval 2 | Q-Acc: 0.4720 | D-Acc: 0.4840 | C-Acc: 0.4700
+Epoch 3 | Batch 0/25 | QL: 0.630 DL: 0.621 CL: 0.631
+Epoch 3 | Batch 20/25 | QL: 0.737 DL: 0.735 CL: 0.628
+Eval 3 | Q-Acc: 0.6180 | D-Acc: 0.5380 | C-Acc: 0.7640
+Epoch 4 | Batch 0/25 | QL: 0.564 DL: 0.718 CL: 0.533
+Epoch 4 | Batch 20/25 | QL: 0.650 DL: 0.623 CL: 0.479
+Eval 4 | Q-Acc: 0.6900 | D-Acc: 0.5860 | C-Acc: 0.7380
+
+========== Noise Rate: 0.005 ==========
+
+--- Noise 0.005 | Seed: 0 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 4780.53it/s]
+Epoch 0 | Batch 0/25 | QL: 7.392 DL: 7.126 CL: 6.774
+Epoch 0 | Batch 20/25 | QL: 0.787 DL: 3.944 CL: 0.928
+Eval 0 | Q-Acc: 0.4680 | D-Acc: 0.5920 | C-Acc: 0.5240
+Epoch 1 | Batch 0/25 | QL: 0.795 DL: 2.360 CL: 0.655
+Epoch 1 | Batch 20/25 | QL: 0.733 DL: 0.679 CL: 0.592
+Eval 1 | Q-Acc: 0.4680 | D-Acc: 0.4800 | C-Acc: 0.5220
+Epoch 2 | Batch 0/25 | QL: 0.802 DL: 0.682 CL: 0.626
+Epoch 2 | Batch 20/25 | QL: 0.758 DL: 0.725 CL: 1.383
+Eval 2 | Q-Acc: 0.5160 | D-Acc: 0.4900 | C-Acc: 0.6380
+Epoch 3 | Batch 0/25 | QL: 0.680 DL: 0.689 CL: 0.709
+Epoch 3 | Batch 20/25 | QL: 0.804 DL: 0.878 CL: 0.778
+Eval 3 | Q-Acc: 0.4860 | D-Acc: 0.5980 | C-Acc: 0.5100
+Epoch 4 | Batch 0/25 | QL: 0.977 DL: 0.756 CL: 0.927
+Epoch 4 | Batch 20/25 | QL: 0.637 DL: 0.662 CL: 0.626
+Eval 4 | Q-Acc: 0.6800 | D-Acc: 0.6060 | C-Acc: 0.6720
+
+--- Noise 0.005 | Seed: 1 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 5388.05it/s]
+Epoch 0 | Batch 0/25 | QL: 7.595 DL: 7.793 CL: 7.009
+Epoch 0 | Batch 20/25 | QL: 0.911 DL: 4.737 CL: 0.646
+Eval 0 | Q-Acc: 0.4860 | D-Acc: 0.6620 | C-Acc: 0.5020
+Epoch 1 | Batch 0/25 | QL: 0.880 DL: 3.198 CL: 0.784
+Epoch 1 | Batch 20/25 | QL: 0.662 DL: 0.729 CL: 0.745
+Eval 1 | Q-Acc: 0.6300 | D-Acc: 0.5760 | C-Acc: 0.6300
+Epoch 2 | Batch 0/25 | QL: 0.811 DL: 0.595 CL: 0.604
+Epoch 2 | Batch 20/25 | QL: 0.507 DL: 0.603 CL: 0.486
+Eval 2 | Q-Acc: 0.6280 | D-Acc: 0.6220 | C-Acc: 0.6980
+Epoch 3 | Batch 0/25 | QL: 0.711 DL: 0.728 CL: 0.497
+Epoch 3 | Batch 20/25 | QL: 0.644 DL: 0.640 CL: 0.448
+Eval 3 | Q-Acc: 0.7500 | D-Acc: 0.6780 | C-Acc: 0.6580
+Epoch 4 | Batch 0/25 | QL: 0.512 DL: 0.489 CL: 0.317
+Epoch 4 | Batch 20/25 | QL: 0.488 DL: 0.600 CL: 0.264
+Eval 4 | Q-Acc: 0.7140 | D-Acc: 0.6440 | C-Acc: 0.7740
+
+--- Noise 0.005 | Seed: 2 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 6469.39it/s]
+Epoch 0 | Batch 0/25 | QL: 7.339 DL: 7.133 CL: 6.696
+Epoch 0 | Batch 20/25 | QL: 2.362 DL: 4.787 CL: 0.896
+Eval 0 | Q-Acc: 0.5620 | D-Acc: 0.6460 | C-Acc: 0.5020
+Epoch 1 | Batch 0/25 | QL: 0.876 DL: 3.558 CL: 0.717
+Epoch 1 | Batch 20/25 | QL: 0.630 DL: 0.987 CL: 0.733
+Eval 1 | Q-Acc: 0.6380 | D-Acc: 0.4900 | C-Acc: 0.6280
+Epoch 2 | Batch 0/25 | QL: 0.630 DL: 0.722 CL: 0.674
+Epoch 2 | Batch 20/25 | QL: 0.541 DL: 0.669 CL: 0.752
+Eval 2 | Q-Acc: 0.5240 | D-Acc: 0.5320 | C-Acc: 0.6740
+Epoch 3 | Batch 0/25 | QL: 0.493 DL: 0.825 CL: 0.567
+Epoch 3 | Batch 20/25 | QL: 0.572 DL: 0.697 CL: 0.495
+Eval 3 | Q-Acc: 0.6720 | D-Acc: 0.5540 | C-Acc: 0.6620
+Epoch 4 | Batch 0/25 | QL: 0.524 DL: 0.640 CL: 0.500
+Epoch 4 | Batch 20/25 | QL: 0.527 DL: 0.534 CL: 0.361
+Eval 4 | Q-Acc: 0.6580 | D-Acc: 0.4880 | C-Acc: 0.6520
+
+--- Noise 0.005 | Seed: 3 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 5113.02it/s]
+Epoch 0 | Batch 0/25 | QL: 8.098 DL: 8.381 CL: 6.142
+Epoch 0 | Batch 20/25 | QL: 2.032 DL: 4.747 CL: 0.869
+Eval 0 | Q-Acc: 0.5420 | D-Acc: 0.6560 | C-Acc: 0.6160
+Epoch 1 | Batch 0/25 | QL: 1.148 DL: 4.569 CL: 0.633
+Epoch 1 | Batch 20/25 | QL: 0.736 DL: 0.818 CL: 0.627
+Eval 1 | Q-Acc: 0.5100 | D-Acc: 0.4680 | C-Acc: 0.6420
+Epoch 2 | Batch 0/25 | QL: 0.736 DL: 0.926 CL: 0.579
+Epoch 2 | Batch 20/25 | QL: 0.888 DL: 0.725 CL: 0.785
+Eval 2 | Q-Acc: 0.5640 | D-Acc: 0.4680 | C-Acc: 0.7100
+Epoch 3 | Batch 0/25 | QL: 0.647 DL: 0.777 CL: 0.497
+Epoch 3 | Batch 20/25 | QL: 0.693 DL: 0.658 CL: 0.586
+Eval 3 | Q-Acc: 0.5840 | D-Acc: 0.6920 | C-Acc: 0.6640
+Epoch 4 | Batch 0/25 | QL: 0.670 DL: 0.751 CL: 0.680
+Epoch 4 | Batch 20/25 | QL: 0.648 DL: 0.608 CL: 0.670
+Eval 4 | Q-Acc: 0.6040 | D-Acc: 0.6760 | C-Acc: 0.7100
+
+--- Noise 0.005 | Seed: 4 ---
+Training on device: cuda
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 4967.21it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Epoch 0 | Batch 0/25 | QL: 7.606 DL: 6.543 CL: 6.004
+Epoch 0 | Batch 20/25 | QL: 1.099 DL: 2.879 CL: 1.277
+Eval 0 | Q-Acc: 0.4640 | D-Acc: 0.5340 | C-Acc: 0.5100
+Epoch 1 | Batch 0/25 | QL: 0.730 DL: 1.681 CL: 0.614
+Epoch 1 | Batch 20/25 | QL: 0.702 DL: 0.893 CL: 0.543
+Eval 1 | Q-Acc: 0.4760 | D-Acc: 0.5440 | C-Acc: 0.4780
+Epoch 2 | Batch 0/25 | QL: 1.059 DL: 0.662 CL: 0.910
+Epoch 2 | Batch 20/25 | QL: 0.578 DL: 0.576 CL: 0.465
+Eval 2 | Q-Acc: 0.4700 | D-Acc: 0.5100 | C-Acc: 0.7080
+Epoch 3 | Batch 0/25 | QL: 0.711 DL: 0.697 CL: 0.650
+Epoch 3 | Batch 20/25 | QL: 0.841 DL: 0.689 CL: 0.484
+Eval 3 | Q-Acc: 0.5660 | D-Acc: 0.6480 | C-Acc: 0.6680
+Epoch 4 | Batch 0/25 | QL: 0.566 DL: 0.525 CL: 0.465
+Epoch 4 | Batch 20/25 | QL: 0.788 DL: 0.480 CL: 0.553
+Eval 4 | Q-Acc: 0.6000 | D-Acc: 0.6580 | C-Acc: 0.6080
+
+--- Noise 0.005 | Seed: 5 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 5785.19it/s]
+Epoch 0 | Batch 0/25 | QL: 8.997 DL: 7.733 CL: 6.916
+Epoch 0 | Batch 20/25 | QL: 3.556 DL: 5.691 CL: 0.856
+Eval 0 | Q-Acc: 0.7080 | D-Acc: 0.7020 | C-Acc: 0.5760
+Epoch 1 | Batch 0/25 | QL: 2.144 DL: 6.029 CL: 0.712
+Epoch 1 | Batch 20/25 | QL: 0.675 DL: 4.453 CL: 0.620
+Eval 1 | Q-Acc: 0.4740 | D-Acc: 0.5880 | C-Acc: 0.4760
+Epoch 2 | Batch 0/25 | QL: 0.679 DL: 2.306 CL: 0.529
+Epoch 2 | Batch 20/25 | QL: 0.611 DL: 0.634 CL: 0.623
+Eval 2 | Q-Acc: 0.7220 | D-Acc: 0.6200 | C-Acc: 0.6260
+Epoch 3 | Batch 0/25 | QL: 0.623 DL: 0.657 CL: 0.568
+Epoch 3 | Batch 20/25 | QL: 0.730 DL: 0.602 CL: 0.664
+Eval 3 | Q-Acc: 0.6300 | D-Acc: 0.6260 | C-Acc: 0.7600
+Epoch 4 | Batch 0/25 | QL: 0.396 DL: 0.516 CL: 0.392
+Epoch 4 | Batch 20/25 | QL: 0.527 DL: 0.652 CL: 0.553
+Eval 4 | Q-Acc: 0.6400 | D-Acc: 0.6460 | C-Acc: 0.5240
+
+--- Noise 0.005 | Seed: 6 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 6992.55it/s]
+Epoch 0 | Batch 0/25 | QL: 6.676 DL: 6.988 CL: 6.534
+Epoch 0 | Batch 20/25 | QL: 1.063 DL: 3.764 CL: 0.722
+Eval 0 | Q-Acc: 0.5420 | D-Acc: 0.5280 | C-Acc: 0.5540
+Epoch 1 | Batch 0/25 | QL: 0.839 DL: 2.558 CL: 0.735
+Epoch 1 | Batch 20/25 | QL: 0.730 DL: 0.694 CL: 0.787
+Eval 1 | Q-Acc: 0.5080 | D-Acc: 0.5180 | C-Acc: 0.5560
+Epoch 2 | Batch 0/25 | QL: 0.645 DL: 0.571 CL: 0.674
+Epoch 2 | Batch 20/25 | QL: 0.579 DL: 0.592 CL: 0.494
+Eval 2 | Q-Acc: 0.5780 | D-Acc: 0.5880 | C-Acc: 0.6160
+Epoch 3 | Batch 0/25 | QL: 0.642 DL: 0.613 CL: 0.622
+Epoch 3 | Batch 20/25 | QL: 0.759 DL: 0.594 CL: 0.576
+Eval 3 | Q-Acc: 0.6180 | D-Acc: 0.6180 | C-Acc: 0.6640
+Epoch 4 | Batch 0/25 | QL: 0.630 DL: 0.674 CL: 0.529
+Epoch 4 | Batch 20/25 | QL: 0.520 DL: 0.413 CL: 0.342
+Eval 4 | Q-Acc: 0.6120 | D-Acc: 0.6460 | C-Acc: 0.6840
+
+--- Noise 0.005 | Seed: 7 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 5053.75it/s]
+Epoch 0 | Batch 0/25 | QL: 7.255 DL: 7.416 CL: 6.787
+Epoch 0 | Batch 20/25 | QL: 0.608 DL: 1.361 CL: 1.410
+Eval 0 | Q-Acc: 0.4740 | D-Acc: 0.4720 | C-Acc: 0.4860
+Epoch 1 | Batch 0/25 | QL: 0.840 DL: 0.823 CL: 0.702
+Epoch 1 | Batch 20/25 | QL: 0.780 DL: 0.830 CL: 0.648
+Eval 1 | Q-Acc: 0.5840 | D-Acc: 0.5500 | C-Acc: 0.5880
+Epoch 2 | Batch 0/25 | QL: 0.808 DL: 0.844 CL: 0.766
+Epoch 2 | Batch 20/25 | QL: 0.933 DL: 0.879 CL: 0.815
+Eval 2 | Q-Acc: 0.5940 | D-Acc: 0.5700 | C-Acc: 0.6560
+Epoch 3 | Batch 0/25 | QL: 0.558 DL: 0.669 CL: 0.598
+Epoch 3 | Batch 20/25 | QL: 0.660 DL: 0.599 CL: 0.549
+Eval 3 | Q-Acc: 0.6480 | D-Acc: 0.5980 | C-Acc: 0.6840
+Epoch 4 | Batch 0/25 | QL: 0.530 DL: 0.612 CL: 0.425
+Epoch 4 | Batch 20/25 | QL: 0.796 DL: 0.628 CL: 0.646
+Eval 4 | Q-Acc: 0.6760 | D-Acc: 0.6480 | C-Acc: 0.5920
+
+--- Noise 0.005 | Seed: 8 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 5650.23it/s]
+Epoch 0 | Batch 0/25 | QL: 7.511 DL: 8.735 CL: 6.830
+Epoch 0 | Batch 20/25 | QL: 0.966 DL: 3.669 CL: 0.602
+Eval 0 | Q-Acc: 0.5380 | D-Acc: 0.5420 | C-Acc: 0.5380
+Epoch 1 | Batch 0/25 | QL: 0.649 DL: 3.668 CL: 0.688
+Epoch 1 | Batch 20/25 | QL: 0.838 DL: 1.051 CL: 0.741
+Eval 1 | Q-Acc: 0.4720 | D-Acc: 0.4680 | C-Acc: 0.4740
+Epoch 2 | Batch 0/25 | QL: 0.847 DL: 0.863 CL: 0.627
+Epoch 2 | Batch 20/25 | QL: 0.652 DL: 0.627 CL: 0.698
+Eval 2 | Q-Acc: 0.5920 | D-Acc: 0.5300 | C-Acc: 0.6380
+Epoch 3 | Batch 0/25 | QL: 0.667 DL: 0.469 CL: 0.598
+Epoch 3 | Batch 20/25 | QL: 0.671 DL: 0.681 CL: 0.423
+Eval 3 | Q-Acc: 0.5980 | D-Acc: 0.5020 | C-Acc: 0.7620
+Epoch 4 | Batch 0/25 | QL: 0.696 DL: 0.653 CL: 0.372
+Epoch 4 | Batch 20/25 | QL: 0.624 DL: 0.697 CL: 0.371
+Eval 4 | Q-Acc: 0.5720 | D-Acc: 0.5020 | C-Acc: 0.7560
+
+--- Noise 0.005 | Seed: 9 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 6948.49it/s]
+Epoch 0 | Batch 0/25 | QL: 8.004 DL: 7.419 CL: 6.794
+Epoch 0 | Batch 20/25 | QL: 1.401 DL: 1.083 CL: 0.772
+Eval 0 | Q-Acc: 0.5220 | D-Acc: 0.5360 | C-Acc: 0.5560
+Epoch 1 | Batch 0/25 | QL: 1.100 DL: 1.040 CL: 0.688
+Epoch 1 | Batch 20/25 | QL: 0.720 DL: 0.756 CL: 0.772
+Eval 1 | Q-Acc: 0.5680 | D-Acc: 0.5320 | C-Acc: 0.6560
+Epoch 2 | Batch 0/25 | QL: 0.787 DL: 0.682 CL: 0.686
+Epoch 2 | Batch 20/25 | QL: 0.736 DL: 0.724 CL: 0.648
+Eval 2 | Q-Acc: 0.4680 | D-Acc: 0.4840 | C-Acc: 0.4700
+Epoch 3 | Batch 0/25 | QL: 0.679 DL: 0.621 CL: 0.631
+Epoch 3 | Batch 20/25 | QL: 0.660 DL: 0.735 CL: 0.628
+Eval 3 | Q-Acc: 0.5260 | D-Acc: 0.5380 | C-Acc: 0.7640
+Epoch 4 | Batch 0/25 | QL: 0.591 DL: 0.718 CL: 0.533
+Epoch 4 | Batch 20/25 | QL: 0.738 DL: 0.623 CL: 0.479
+Eval 4 | Q-Acc: 0.6420 | D-Acc: 0.5860 | C-Acc: 0.7380
+
+========== Noise Rate: 0.01 ==========
+
+--- Noise 0.01 | Seed: 0 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 7200.69it/s]
+Epoch 0 | Batch 0/25 | QL: 7.100 DL: 7.126 CL: 6.774
+Epoch 0 | Batch 20/25 | QL: 0.960 DL: 3.944 CL: 0.928
+Eval 0 | Q-Acc: 0.4640 | D-Acc: 0.5920 | C-Acc: 0.5240
+Epoch 1 | Batch 0/25 | QL: 0.824 DL: 2.360 CL: 0.655
+Epoch 1 | Batch 20/25 | QL: 0.748 DL: 0.679 CL: 0.592
+Eval 1 | Q-Acc: 0.4700 | D-Acc: 0.4800 | C-Acc: 0.5220
+Epoch 2 | Batch 0/25 | QL: 0.708 DL: 0.682 CL: 0.626
+Epoch 2 | Batch 20/25 | QL: 0.699 DL: 0.725 CL: 1.383
+Eval 2 | Q-Acc: 0.5080 | D-Acc: 0.4900 | C-Acc: 0.6380
+Epoch 3 | Batch 0/25 | QL: 0.727 DL: 0.689 CL: 0.709
+Epoch 3 | Batch 20/25 | QL: 0.784 DL: 0.878 CL: 0.778
+Eval 3 | Q-Acc: 0.4940 | D-Acc: 0.5980 | C-Acc: 0.5100
+Epoch 4 | Batch 0/25 | QL: 0.792 DL: 0.756 CL: 0.927
+Epoch 4 | Batch 20/25 | QL: 0.669 DL: 0.662 CL: 0.626
+Eval 4 | Q-Acc: 0.6300 | D-Acc: 0.6060 | C-Acc: 0.6720
+
+--- Noise 0.01 | Seed: 1 ---
+Training on device: cuda
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 4587.67it/s]
+Epoch 0 | Batch 0/25 | QL: 7.365 DL: 7.793 CL: 7.009
+Epoch 0 | Batch 20/25 | QL: 1.173 DL: 4.737 CL: 0.646
+Eval 0 | Q-Acc: 0.6320 | D-Acc: 0.6620 | C-Acc: 0.5020
+Epoch 1 | Batch 0/25 | QL: 0.920 DL: 3.198 CL: 0.784
+Epoch 1 | Batch 20/25 | QL: 0.738 DL: 0.729 CL: 0.745
+Eval 1 | Q-Acc: 0.6440 | D-Acc: 0.5760 | C-Acc: 0.6300
+Epoch 2 | Batch 0/25 | QL: 0.727 DL: 0.595 CL: 0.604
+Epoch 2 | Batch 20/25 | QL: 0.469 DL: 0.603 CL: 0.486
+Eval 2 | Q-Acc: 0.6560 | D-Acc: 0.6220 | C-Acc: 0.6980
+Epoch 3 | Batch 0/25 | QL: 0.620 DL: 0.728 CL: 0.497
+Epoch 3 | Batch 20/25 | QL: 0.584 DL: 0.640 CL: 0.448
+Eval 3 | Q-Acc: 0.5860 | D-Acc: 0.6780 | C-Acc: 0.6580
+Epoch 4 | Batch 0/25 | QL: 0.474 DL: 0.489 CL: 0.317
+Epoch 4 | Batch 20/25 | QL: 0.588 DL: 0.600 CL: 0.264
+Eval 4 | Q-Acc: 0.6120 | D-Acc: 0.6440 | C-Acc: 0.7740
+
+--- Noise 0.01 | Seed: 2 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 2158.84it/s]
+Epoch 0 | Batch 0/25 | QL: 6.775 DL: 7.133 CL: 6.696
+Epoch 0 | Batch 20/25 | QL: 3.582 DL: 4.787 CL: 0.896
+Eval 0 | Q-Acc: 0.6100 | D-Acc: 0.6460 | C-Acc: 0.5020
+Epoch 1 | Batch 0/25 | QL: 2.344 DL: 3.558 CL: 0.717
+Epoch 1 | Batch 20/25 | QL: 0.894 DL: 0.987 CL: 0.733
+Eval 1 | Q-Acc: 0.6240 | D-Acc: 0.4900 | C-Acc: 0.6280
+Epoch 2 | Batch 0/25 | QL: 0.798 DL: 0.722 CL: 0.674
+Epoch 2 | Batch 20/25 | QL: 0.864 DL: 0.669 CL: 0.752
+Eval 2 | Q-Acc: 0.6620 | D-Acc: 0.5320 | C-Acc: 0.6740
+Epoch 3 | Batch 0/25 | QL: 0.509 DL: 0.825 CL: 0.567
+Epoch 3 | Batch 20/25 | QL: 0.605 DL: 0.697 CL: 0.495
+Eval 3 | Q-Acc: 0.6880 | D-Acc: 0.5540 | C-Acc: 0.6620
+Epoch 4 | Batch 0/25 | QL: 0.649 DL: 0.640 CL: 0.500
+Epoch 4 | Batch 20/25 | QL: 0.553 DL: 0.534 CL: 0.361
+Eval 4 | Q-Acc: 0.6400 | D-Acc: 0.4880 | C-Acc: 0.6520
+
+--- Noise 0.01 | Seed: 3 ---
+Training on device: cuda
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 1894.86it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Epoch 0 | Batch 0/25 | QL: 7.322 DL: 8.381 CL: 6.142
+Epoch 0 | Batch 20/25 | QL: 2.065 DL: 4.747 CL: 0.869
+Eval 0 | Q-Acc: 0.5580 | D-Acc: 0.6560 | C-Acc: 0.6160
+Epoch 1 | Batch 0/25 | QL: 1.505 DL: 4.569 CL: 0.633
+Epoch 1 | Batch 20/25 | QL: 0.657 DL: 0.818 CL: 0.627
+Eval 1 | Q-Acc: 0.4960 | D-Acc: 0.4680 | C-Acc: 0.6420
+Epoch 2 | Batch 0/25 | QL: 0.690 DL: 0.926 CL: 0.579
+Epoch 2 | Batch 20/25 | QL: 0.928 DL: 0.725 CL: 0.785
+Eval 2 | Q-Acc: 0.4840 | D-Acc: 0.4680 | C-Acc: 0.7100
+Epoch 3 | Batch 0/25 | QL: 0.759 DL: 0.777 CL: 0.497
+Epoch 3 | Batch 20/25 | QL: 0.795 DL: 0.658 CL: 0.586
+Eval 3 | Q-Acc: 0.5200 | D-Acc: 0.6920 | C-Acc: 0.6640
+Epoch 4 | Batch 0/25 | QL: 0.781 DL: 0.751 CL: 0.680
+Epoch 4 | Batch 20/25 | QL: 0.595 DL: 0.608 CL: 0.670
+Eval 4 | Q-Acc: 0.6240 | D-Acc: 0.6760 | C-Acc: 0.7100
+
+--- Noise 0.01 | Seed: 4 ---
+Training on device: cuda
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 4560.20it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Epoch 0 | Batch 0/25 | QL: 6.926 DL: 6.543 CL: 6.004
+Epoch 0 | Batch 20/25 | QL: 1.554 DL: 2.879 CL: 1.277
+Eval 0 | Q-Acc: 0.4980 | D-Acc: 0.5340 | C-Acc: 0.5100
+Epoch 1 | Batch 0/25 | QL: 1.053 DL: 1.681 CL: 0.614
+Epoch 1 | Batch 20/25 | QL: 0.775 DL: 0.893 CL: 0.543
+Eval 1 | Q-Acc: 0.4760 | D-Acc: 0.5440 | C-Acc: 0.4780
+Epoch 2 | Batch 0/25 | QL: 0.877 DL: 0.662 CL: 0.910
+Epoch 2 | Batch 20/25 | QL: 0.622 DL: 0.576 CL: 0.465
+Eval 2 | Q-Acc: 0.4920 | D-Acc: 0.5100 | C-Acc: 0.7080
+Epoch 3 | Batch 0/25 | QL: 0.695 DL: 0.697 CL: 0.650
+Epoch 3 | Batch 20/25 | QL: 0.840 DL: 0.689 CL: 0.484
+Eval 3 | Q-Acc: 0.5860 | D-Acc: 0.6480 | C-Acc: 0.6680
+Epoch 4 | Batch 0/25 | QL: 0.529 DL: 0.525 CL: 0.465
+Epoch 4 | Batch 20/25 | QL: 0.753 DL: 0.480 CL: 0.553
+Eval 4 | Q-Acc: 0.6260 | D-Acc: 0.6580 | C-Acc: 0.6080
+
+--- Noise 0.01 | Seed: 5 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 5729.92it/s]
+Epoch 0 | Batch 0/25 | QL: 8.302 DL: 7.733 CL: 6.916
+Epoch 0 | Batch 20/25 | QL: 5.043 DL: 5.691 CL: 0.856
+Eval 0 | Q-Acc: 0.6460 | D-Acc: 0.7020 | C-Acc: 0.5760
+Epoch 1 | Batch 0/25 | QL: 4.214 DL: 6.029 CL: 0.712
+Epoch 1 | Batch 20/25 | QL: 0.593 DL: 4.453 CL: 0.620
+Eval 1 | Q-Acc: 0.4840 | D-Acc: 0.5880 | C-Acc: 0.4760
+Epoch 2 | Batch 0/25 | QL: 0.588 DL: 2.306 CL: 0.529
+Epoch 2 | Batch 20/25 | QL: 0.663 DL: 0.634 CL: 0.623
+Eval 2 | Q-Acc: 0.6300 | D-Acc: 0.6200 | C-Acc: 0.6260
+Epoch 3 | Batch 0/25 | QL: 0.555 DL: 0.657 CL: 0.568
+Epoch 3 | Batch 20/25 | QL: 0.663 DL: 0.602 CL: 0.664
+Eval 3 | Q-Acc: 0.6360 | D-Acc: 0.6260 | C-Acc: 0.7600
+Epoch 4 | Batch 0/25 | QL: 0.450 DL: 0.516 CL: 0.392
+Epoch 4 | Batch 20/25 | QL: 0.551 DL: 0.652 CL: 0.553
+Eval 4 | Q-Acc: 0.6240 | D-Acc: 0.6460 | C-Acc: 0.5240
+
+--- Noise 0.01 | Seed: 6 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 5119.77it/s]
+Epoch 0 | Batch 0/25 | QL: 6.731 DL: 6.988 CL: 6.534
+Epoch 0 | Batch 20/25 | QL: 0.852 DL: 3.764 CL: 0.722
+Eval 0 | Q-Acc: 0.4660 | D-Acc: 0.5280 | C-Acc: 0.5540
+Epoch 1 | Batch 0/25 | QL: 1.042 DL: 2.558 CL: 0.735
+Epoch 1 | Batch 20/25 | QL: 0.744 DL: 0.694 CL: 0.787
+Eval 1 | Q-Acc: 0.4780 | D-Acc: 0.5180 | C-Acc: 0.5560
+Epoch 2 | Batch 0/25 | QL: 0.493 DL: 0.571 CL: 0.674
+Epoch 2 | Batch 20/25 | QL: 0.581 DL: 0.592 CL: 0.494
+Eval 2 | Q-Acc: 0.6280 | D-Acc: 0.5880 | C-Acc: 0.6160
+Epoch 3 | Batch 0/25 | QL: 0.604 DL: 0.613 CL: 0.622
+Epoch 3 | Batch 20/25 | QL: 0.712 DL: 0.594 CL: 0.576
+Eval 3 | Q-Acc: 0.6100 | D-Acc: 0.6180 | C-Acc: 0.6640
+Epoch 4 | Batch 0/25 | QL: 0.667 DL: 0.674 CL: 0.529
+Epoch 4 | Batch 20/25 | QL: 0.388 DL: 0.413 CL: 0.342
+Eval 4 | Q-Acc: 0.6440 | D-Acc: 0.6460 | C-Acc: 0.6840
+
+--- Noise 0.01 | Seed: 7 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 2816.64it/s]
+Epoch 0 | Batch 0/25 | QL: 6.879 DL: 7.416 CL: 6.787
+Epoch 0 | Batch 20/25 | QL: 1.043 DL: 1.361 CL: 1.410
+Eval 0 | Q-Acc: 0.4720 | D-Acc: 0.4720 | C-Acc: 0.4860
+Epoch 1 | Batch 0/25 | QL: 0.766 DL: 0.823 CL: 0.702
+Epoch 1 | Batch 20/25 | QL: 0.705 DL: 0.830 CL: 0.648
+Eval 1 | Q-Acc: 0.5520 | D-Acc: 0.5500 | C-Acc: 0.5880
+Epoch 2 | Batch 0/25 | QL: 0.844 DL: 0.844 CL: 0.766
+Epoch 2 | Batch 20/25 | QL: 0.884 DL: 0.879 CL: 0.815
+Eval 2 | Q-Acc: 0.5040 | D-Acc: 0.5700 | C-Acc: 0.6560
+Epoch 3 | Batch 0/25 | QL: 0.516 DL: 0.669 CL: 0.598
+Epoch 3 | Batch 20/25 | QL: 0.560 DL: 0.599 CL: 0.549
+Eval 3 | Q-Acc: 0.6000 | D-Acc: 0.5980 | C-Acc: 0.6840
+Epoch 4 | Batch 0/25 | QL: 0.541 DL: 0.612 CL: 0.425
+Epoch 4 | Batch 20/25 | QL: 0.726 DL: 0.628 CL: 0.646
+Eval 4 | Q-Acc: 0.6440 | D-Acc: 0.6480 | C-Acc: 0.5920
+
+--- Noise 0.01 | Seed: 8 ---
+Training on device: cuda
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 3014.99it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Epoch 0 | Batch 0/25 | QL: 7.229 DL: 8.735 CL: 6.830
+Epoch 0 | Batch 20/25 | QL: 0.731 DL: 3.669 CL: 0.602
+Eval 0 | Q-Acc: 0.5360 | D-Acc: 0.5420 | C-Acc: 0.5380
+Epoch 1 | Batch 0/25 | QL: 0.715 DL: 3.668 CL: 0.688
+Epoch 1 | Batch 20/25 | QL: 0.649 DL: 1.051 CL: 0.741
+Eval 1 | Q-Acc: 0.4680 | D-Acc: 0.4680 | C-Acc: 0.4740
+Epoch 2 | Batch 0/25 | QL: 0.752 DL: 0.863 CL: 0.627
+Epoch 2 | Batch 20/25 | QL: 0.750 DL: 0.627 CL: 0.698
+Eval 2 | Q-Acc: 0.6240 | D-Acc: 0.5300 | C-Acc: 0.6380
+Epoch 3 | Batch 0/25 | QL: 0.643 DL: 0.469 CL: 0.598
+Epoch 3 | Batch 20/25 | QL: 0.651 DL: 0.681 CL: 0.423
+Eval 3 | Q-Acc: 0.6600 | D-Acc: 0.5020 | C-Acc: 0.7620
+Epoch 4 | Batch 0/25 | QL: 0.584 DL: 0.653 CL: 0.372
+Epoch 4 | Batch 20/25 | QL: 0.682 DL: 0.697 CL: 0.371
+Eval 4 | Q-Acc: 0.7180 | D-Acc: 0.5020 | C-Acc: 0.7560
+
+--- Noise 0.01 | Seed: 9 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 4358.12it/s]
+Epoch 0 | Batch 0/25 | QL: 7.254 DL: 7.419 CL: 6.794
+Epoch 0 | Batch 20/25 | QL: 2.742 DL: 1.083 CL: 0.772
+Eval 0 | Q-Acc: 0.5300 | D-Acc: 0.5360 | C-Acc: 0.5560
+Epoch 1 | Batch 0/25 | QL: 1.359 DL: 1.040 CL: 0.688
+Epoch 1 | Batch 20/25 | QL: 0.689 DL: 0.756 CL: 0.772
+Eval 1 | Q-Acc: 0.4960 | D-Acc: 0.5320 | C-Acc: 0.6560
+Epoch 2 | Batch 0/25 | QL: 0.711 DL: 0.682 CL: 0.686
+Epoch 2 | Batch 20/25 | QL: 0.655 DL: 0.724 CL: 0.648
+Eval 2 | Q-Acc: 0.5140 | D-Acc: 0.4840 | C-Acc: 0.4700
+Epoch 3 | Batch 0/25 | QL: 0.509 DL: 0.621 CL: 0.631
+Epoch 3 | Batch 20/25 | QL: 0.648 DL: 0.735 CL: 0.628
+Eval 3 | Q-Acc: 0.5220 | D-Acc: 0.5380 | C-Acc: 0.7640
+Epoch 4 | Batch 0/25 | QL: 0.651 DL: 0.718 CL: 0.533
+Epoch 4 | Batch 20/25 | QL: 0.768 DL: 0.623 CL: 0.479
+Eval 4 | Q-Acc: 0.5020 | D-Acc: 0.5860 | C-Acc: 0.7380
+
+========== Noise Rate: 0.05 ==========
+
+--- Noise 0.05 | Seed: 0 ---
+Training on device: cuda
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 2543.24it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Epoch 0 | Batch 0/25 | QL: 7.195 DL: 7.126 CL: 6.774
+Epoch 0 | Batch 20/25 | QL: 4.869 DL: 3.944 CL: 0.928
+Eval 0 | Q-Acc: 0.5720 | D-Acc: 0.5920 | C-Acc: 0.5240
+Epoch 1 | Batch 0/25 | QL: 2.855 DL: 2.360 CL: 0.655
+Epoch 1 | Batch 20/25 | QL: 0.766 DL: 0.679 CL: 0.592
+Eval 1 | Q-Acc: 0.4640 | D-Acc: 0.4800 | C-Acc: 0.5220
+Epoch 2 | Batch 0/25 | QL: 0.760 DL: 0.682 CL: 0.626
+Epoch 2 | Batch 20/25 | QL: 0.824 DL: 0.725 CL: 1.383
+Eval 2 | Q-Acc: 0.4760 | D-Acc: 0.4900 | C-Acc: 0.6380
+Epoch 3 | Batch 0/25 | QL: 0.747 DL: 0.689 CL: 0.709
+Epoch 3 | Batch 20/25 | QL: 0.853 DL: 0.878 CL: 0.778
+Eval 3 | Q-Acc: 0.5100 | D-Acc: 0.5980 | C-Acc: 0.5100
+Epoch 4 | Batch 0/25 | QL: 0.737 DL: 0.756 CL: 0.927
+Epoch 4 | Batch 20/25 | QL: 0.714 DL: 0.662 CL: 0.626
+Eval 4 | Q-Acc: 0.5700 | D-Acc: 0.6060 | C-Acc: 0.6720
+
+--- Noise 0.05 | Seed: 1 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 4966.81it/s]
+Epoch 0 | Batch 0/25 | QL: 7.422 DL: 7.793 CL: 7.009
+Epoch 0 | Batch 20/25 | QL: 4.745 DL: 4.737 CL: 0.646
+Eval 0 | Q-Acc: 0.6000 | D-Acc: 0.6620 | C-Acc: 0.5020
+Epoch 1 | Batch 0/25 | QL: 3.680 DL: 3.198 CL: 0.784
+Epoch 1 | Batch 20/25 | QL: 1.453 DL: 0.729 CL: 0.745
+Eval 1 | Q-Acc: 0.5400 | D-Acc: 0.5760 | C-Acc: 0.6300
+Epoch 2 | Batch 0/25 | QL: 0.858 DL: 0.595 CL: 0.604
+Epoch 2 | Batch 20/25 | QL: 0.578 DL: 0.603 CL: 0.486
+Eval 2 | Q-Acc: 0.5480 | D-Acc: 0.6220 | C-Acc: 0.6980
+Epoch 3 | Batch 0/25 | QL: 0.880 DL: 0.728 CL: 0.497
+Epoch 3 | Batch 20/25 | QL: 0.700 DL: 0.640 CL: 0.448
+Eval 3 | Q-Acc: 0.5680 | D-Acc: 0.6780 | C-Acc: 0.6580
+Epoch 4 | Batch 0/25 | QL: 0.556 DL: 0.489 CL: 0.317
+Epoch 4 | Batch 20/25 | QL: 0.594 DL: 0.600 CL: 0.264
+Eval 4 | Q-Acc: 0.5980 | D-Acc: 0.6440 | C-Acc: 0.7740
+
+--- Noise 0.05 | Seed: 2 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 6530.16it/s]
+Epoch 0 | Batch 0/25 | QL: 6.698 DL: 7.133 CL: 6.696
+Epoch 0 | Batch 20/25 | QL: 5.167 DL: 4.787 CL: 0.896
+Eval 0 | Q-Acc: 0.6420 | D-Acc: 0.6460 | C-Acc: 0.5020
+Epoch 1 | Batch 0/25 | QL: 4.727 DL: 3.558 CL: 0.717
+Epoch 1 | Batch 20/25 | QL: 1.957 DL: 0.987 CL: 0.733
+Eval 1 | Q-Acc: 0.5300 | D-Acc: 0.4900 | C-Acc: 0.6280
+Epoch 2 | Batch 0/25 | QL: 1.623 DL: 0.722 CL: 0.674
+Epoch 2 | Batch 20/25 | QL: 0.683 DL: 0.669 CL: 0.752
+Eval 2 | Q-Acc: 0.5760 | D-Acc: 0.5320 | C-Acc: 0.6740
+Epoch 3 | Batch 0/25 | QL: 0.586 DL: 0.825 CL: 0.567
+Epoch 3 | Batch 20/25 | QL: 0.596 DL: 0.697 CL: 0.495
+Eval 3 | Q-Acc: 0.6240 | D-Acc: 0.5540 | C-Acc: 0.6620
+Epoch 4 | Batch 0/25 | QL: 0.606 DL: 0.640 CL: 0.500
+Epoch 4 | Batch 20/25 | QL: 0.611 DL: 0.534 CL: 0.361
+Eval 4 | Q-Acc: 0.6140 | D-Acc: 0.4880 | C-Acc: 0.6520
+
+--- Noise 0.05 | Seed: 3 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 7036.63it/s]
+Epoch 0 | Batch 0/25 | QL: 7.075 DL: 8.381 CL: 6.142
+Epoch 0 | Batch 20/25 | QL: 5.381 DL: 4.747 CL: 0.869
+Eval 0 | Q-Acc: 0.6940 | D-Acc: 0.6560 | C-Acc: 0.6160
+Epoch 1 | Batch 0/25 | QL: 5.116 DL: 4.569 CL: 0.633
+Epoch 1 | Batch 20/25 | QL: 1.007 DL: 0.818 CL: 0.627
+Eval 1 | Q-Acc: 0.4660 | D-Acc: 0.4680 | C-Acc: 0.6420
+Epoch 2 | Batch 0/25 | QL: 0.795 DL: 0.926 CL: 0.579
+Epoch 2 | Batch 20/25 | QL: 0.788 DL: 0.725 CL: 0.785
+Eval 2 | Q-Acc: 0.4680 | D-Acc: 0.4680 | C-Acc: 0.7100
+Epoch 3 | Batch 0/25 | QL: 0.725 DL: 0.777 CL: 0.497
+Epoch 3 | Batch 20/25 | QL: 0.709 DL: 0.658 CL: 0.586
+Eval 3 | Q-Acc: 0.5300 | D-Acc: 0.6920 | C-Acc: 0.6640
+Epoch 4 | Batch 0/25 | QL: 0.826 DL: 0.751 CL: 0.680
+Epoch 4 | Batch 20/25 | QL: 0.644 DL: 0.608 CL: 0.670
+Eval 4 | Q-Acc: 0.5200 | D-Acc: 0.6760 | C-Acc: 0.7100
+
+--- Noise 0.05 | Seed: 4 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 4415.21it/s]
+Epoch 0 | Batch 0/25 | QL: 6.729 DL: 6.543 CL: 6.004
+Epoch 0 | Batch 20/25 | QL: 4.278 DL: 2.879 CL: 1.277
+Eval 0 | Q-Acc: 0.5620 | D-Acc: 0.5340 | C-Acc: 0.5100
+Epoch 1 | Batch 0/25 | QL: 3.842 DL: 1.681 CL: 0.614
+Epoch 1 | Batch 20/25 | QL: 1.141 DL: 0.893 CL: 0.543
+Eval 1 | Q-Acc: 0.5080 | D-Acc: 0.5440 | C-Acc: 0.4780
+Epoch 2 | Batch 0/25 | QL: 1.022 DL: 0.662 CL: 0.910
+Epoch 2 | Batch 20/25 | QL: 0.745 DL: 0.576 CL: 0.465
+Eval 2 | Q-Acc: 0.4800 | D-Acc: 0.5100 | C-Acc: 0.7080
+Epoch 3 | Batch 0/25 | QL: 0.788 DL: 0.697 CL: 0.650
+Epoch 3 | Batch 20/25 | QL: 0.750 DL: 0.689 CL: 0.484
+Eval 3 | Q-Acc: 0.5580 | D-Acc: 0.6480 | C-Acc: 0.6680
+Epoch 4 | Batch 0/25 | QL: 0.552 DL: 0.525 CL: 0.465
+Epoch 4 | Batch 20/25 | QL: 0.780 DL: 0.480 CL: 0.553
+Eval 4 | Q-Acc: 0.5700 | D-Acc: 0.6580 | C-Acc: 0.6080
+
+--- Noise 0.05 | Seed: 5 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 4529.19it/s]
+Epoch 0 | Batch 0/25 | QL: 7.999 DL: 7.733 CL: 6.916
+Epoch 0 | Batch 20/25 | QL: 5.610 DL: 5.691 CL: 0.856
+Eval 0 | Q-Acc: 0.6840 | D-Acc: 0.7020 | C-Acc: 0.5760
+Epoch 1 | Batch 0/25 | QL: 5.783 DL: 6.029 CL: 0.712
+Epoch 1 | Batch 20/25 | QL: 3.043 DL: 4.453 CL: 0.620
+Eval 1 | Q-Acc: 0.5720 | D-Acc: 0.5880 | C-Acc: 0.4760
+Epoch 2 | Batch 0/25 | QL: 1.518 DL: 2.306 CL: 0.529
+Epoch 2 | Batch 20/25 | QL: 0.827 DL: 0.634 CL: 0.623
+Eval 2 | Q-Acc: 0.5660 | D-Acc: 0.6200 | C-Acc: 0.6260
+Epoch 3 | Batch 0/25 | QL: 0.891 DL: 0.657 CL: 0.568
+Epoch 3 | Batch 20/25 | QL: 0.726 DL: 0.602 CL: 0.664
+Eval 3 | Q-Acc: 0.6140 | D-Acc: 0.6260 | C-Acc: 0.7600
+Epoch 4 | Batch 0/25 | QL: 0.545 DL: 0.516 CL: 0.392
+Epoch 4 | Batch 20/25 | QL: 0.693 DL: 0.652 CL: 0.553
+Eval 4 | Q-Acc: 0.6000 | D-Acc: 0.6460 | C-Acc: 0.5240
+
+--- Noise 0.05 | Seed: 6 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 3583.43it/s]
+Epoch 0 | Batch 0/25 | QL: 6.911 DL: 6.988 CL: 6.534
+Epoch 0 | Batch 20/25 | QL: 3.806 DL: 3.764 CL: 0.722
+Eval 0 | Q-Acc: 0.5480 | D-Acc: 0.5280 | C-Acc: 0.5540
+Epoch 1 | Batch 0/25 | QL: 2.637 DL: 2.558 CL: 0.735
+Epoch 1 | Batch 20/25 | QL: 0.986 DL: 0.694 CL: 0.787
+Eval 1 | Q-Acc: 0.4960 | D-Acc: 0.5180 | C-Acc: 0.5560
+Epoch 2 | Batch 0/25 | QL: 0.627 DL: 0.571 CL: 0.674
+Epoch 2 | Batch 20/25 | QL: 0.700 DL: 0.592 CL: 0.494
+Eval 2 | Q-Acc: 0.5460 | D-Acc: 0.5880 | C-Acc: 0.6160
+Epoch 3 | Batch 0/25 | QL: 0.636 DL: 0.613 CL: 0.622
+Epoch 3 | Batch 20/25 | QL: 0.682 DL: 0.594 CL: 0.576
+Eval 3 | Q-Acc: 0.5520 | D-Acc: 0.6180 | C-Acc: 0.6640
+Epoch 4 | Batch 0/25 | QL: 0.799 DL: 0.674 CL: 0.529
+Epoch 4 | Batch 20/25 | QL: 0.484 DL: 0.413 CL: 0.342
+Eval 4 | Q-Acc: 0.5680 | D-Acc: 0.6460 | C-Acc: 0.6840
+
+--- Noise 0.05 | Seed: 7 ---
+Training on device: cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 3469.97it/s]
+Epoch 0 | Batch 0/25 | QL: 6.780 DL: 7.416 CL: 6.787
+Epoch 0 | Batch 20/25 | QL: 3.807 DL: 1.361 CL: 1.410
+Eval 0 | Q-Acc: 0.6200 | D-Acc: 0.4720 | C-Acc: 0.4860
+Epoch 1 | Batch 0/25 | QL: 2.197 DL: 0.823 CL: 0.702
+Epoch 1 | Batch 20/25 | QL: 0.783 DL: 0.830 CL: 0.648
+Eval 1 | Q-Acc: 0.4840 | D-Acc: 0.5500 | C-Acc: 0.5880
+Epoch 2 | Batch 0/25 | QL: 0.961 DL: 0.844 CL: 0.766
+Epoch 2 | Batch 20/25 | QL: 1.065 DL: 0.879 CL: 0.815
+Eval 2 | Q-Acc: 0.4980 | D-Acc: 0.5700 | C-Acc: 0.6560
+Epoch 3 | Batch 0/25 | QL: 0.686 DL: 0.669 CL: 0.598
+Epoch 3 | Batch 20/25 | QL: 0.701 DL: 0.599 CL: 0.549
+Eval 3 | Q-Acc: 0.5540 | D-Acc: 0.5980 | C-Acc: 0.6840
+Epoch 4 | Batch 0/25 | QL: 0.610 DL: 0.612 CL: 0.425
+Epoch 4 | Batch 20/25 | QL: 0.836 DL: 0.628 CL: 0.646
+Eval 4 | Q-Acc: 0.5140 | D-Acc: 0.6480 | C-Acc: 0.5920
+
+--- Noise 0.05 | Seed: 8 ---
+Training on device: cuda
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 6060.54it/s]
+'[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'huggingface.co'. (_ssl.c:1010)' thrown while requesting HEAD https://huggingface.co/datasets/glue/resolve/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/glue.py
+Retrying in 1s [Retry 1/5].
+Using the latest cached version of the dataset since glue couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'sst2' at C:\Users\beyon\.cache\huggingface\datasets\glue\sst2\0.0.0\bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c (last modified on Sun Mar 22 16:36:47 2026).
+Epoch 0 | Batch 0/25 | QL: 7.106 DL: 8.735 CL: 6.830
+Epoch 0 | Batch 20/25 | QL: 3.885 DL: 3.669 CL: 0.602
+Eval 0 | Q-Acc: 0.5320 | D-Acc: 0.5420 | C-Acc: 0.5380
+Epoch 1 | Batch 0/25 | QL: 3.183 DL: 3.668 CL: 0.688
+Epoch 1 | Batch 20/25 | QL: 0.727 DL: 1.051 CL: 0.741
+Eval 1 | Q-Acc: 0.4740 | D-Acc: 0.4680 | C-Acc: 0.4740
+Epoch 2 | Batch 0/25 | QL: 0.717 DL: 0.863 CL: 0.627
+Epoch 2 | Batch 20/25 | QL: 0.841 DL: 0.627 CL: 0.698
+Eval 2 | Q-Acc: 0.5500 | D-Acc: 0.5300 | C-Acc: 0.6380
+Epoch 3 | Batch 0/25 | QL: 0.626 DL: 0.469 CL: 0.598
+Epoch 3 | Batch 20/25 | QL: 0.840 DL: 0.681 CL: 0.423
+Eval 3 | Q-Acc: 0.5740 | D-Acc: 0.5020 | C-Acc: 0.7620
+Epoch 4 | Batch 0/25 | QL: 0.636 DL: 0.653 CL: 0.372
+Epoch 4 | Batch 20/25 | QL: 0.775 DL: 0.697 CL: 0.371
+Eval 4 | Q-Acc: 0.6100 | D-Acc: 0.5020 | C-Acc: 0.7560
+
+--- Noise 0.05 | Seed: 9 ---
+Training on device: cuda
+Loading weights: 100%|███████████████████████████████████████████████████| 148/148 [00:00<00:00, 3707.78it/s]
+'[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'huggingface.co'. (_ssl.c:1010)' thrown while requesting HEAD https://huggingface.co/datasets/glue/resolve/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/glue.py
+Retrying in 1s [Retry 1/5].
+Using the latest cached version of the dataset since glue couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'sst2' at C:\Users\beyon\.cache\huggingface\datasets\glue\sst2\0.0.0\bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c (last modified on Sun Mar 22 16:36:47 2026).
+Epoch 0 | Batch 0/25 | QL: 6.914 DL: 7.419 CL: 6.794
+Epoch 0 | Batch 20/25 | QL: 4.421 DL: 1.083 CL: 0.772
+Eval 0 | Q-Acc: 0.6480 | D-Acc: 0.5360 | C-Acc: 0.5560
+Epoch 1 | Batch 0/25 | QL: 3.095 DL: 1.040 CL: 0.688
+Epoch 1 | Batch 20/25 | QL: 0.906 DL: 0.756 CL: 0.772
+Eval 1 | Q-Acc: 0.5220 | D-Acc: 0.5320 | C-Acc: 0.6560
+Epoch 2 | Batch 0/25 | QL: 0.938 DL: 0.682 CL: 0.686
+Epoch 2 | Batch 20/25 | QL: 0.758 DL: 0.724 CL: 0.648
+Eval 2 | Q-Acc: 0.4960 | D-Acc: 0.4840 | C-Acc: 0.4700
+Epoch 3 | Batch 0/25 | QL: 0.675 DL: 0.621 CL: 0.631
+Epoch 3 | Batch 20/25 | QL: 0.720 DL: 0.735 CL: 0.628
+Eval 3 | Q-Acc: 0.5300 | D-Acc: 0.5380 | C-Acc: 0.7640
+Epoch 4 | Batch 0/25 | QL: 0.782 DL: 0.718 CL: 0.533
+Epoch 4 | Batch 20/25 | QL: 0.745 DL: 0.623 CL: 0.479
+Eval 4 | Q-Acc: 0.5640 | D-Acc: 0.5860 | C-Acc: 0.7380
+
+E12 noise simulation completed successfully.
+PS C:\Users\beyon\quantum-prompt-optimizer>
+PS C:\Users\beyon\quantum-prompt-optimizer> Get-Clipboard | Out-File C:\Users\beyon\quantum-prompt-optimizer\e12_terminal_log.txt -Encoding utf8
+>> 
+PS C:\Users\beyon\quantum-prompt-optimizer> 
